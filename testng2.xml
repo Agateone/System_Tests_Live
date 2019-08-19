@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="safari">
+  
+  <test  name="safari" >
+   <parameter name="browser" value="safari" />
+    <classes>
+      <class name="Stepdef.Register_From_Popbitch_Firstuse_Notice"/>
+      <class name="Stepdef.Login_From_PopBitch_Frist_Use_Notice"/>
+      <class name="Stepdef.Top_up_from_wallet_staging_popbitch"/>
+      <class name="Stepdef.transaction_staging_popbitch"/>
+    </classes>
+  </test> 
+</suite> 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name=" Popbitch Chrome">
+  <test  name="Chrome" >
+   <parameter name="browser" value="Chrome" />
+    <classes>
+      <class name="Stepdef.Popbitch_register_First_Use_notice"/>
+      <class name="Stepdef.Popbitch_login_First_Use_Notice"/>
+       <class name="Stepdef.popbitch_transaction"/>
+    </classes>
+  </test>  
+</suite> 

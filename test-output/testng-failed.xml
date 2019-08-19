@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ Popbitch Chrome]">
+  <test thread-count="5" name="Chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="Stepdef.popbitch_transaction">
+        <methods>
+          <include name="Cornwall_wallet_balance_is_updated_and_free_point_remains_uneffected"/>
+        </methods>
+      </class> <!-- Stepdef.popbitch_transaction -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+</suite> <!-- Failed suite [ Popbitch Chrome] -->

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Safari"> 
+  <test  name="Safari" >
+   <parameter name="browser" value="Safari" />
+    <classes>
+      <class name="Stepdef.Cornwall_Register"/>
+       <class name="Stepdef.Cornwall_Login_from_FUN"/>
+       <class name="Stepdef.Cornwall_Transaction"/>
+      </classes>
+  </test>  
+</suite> 

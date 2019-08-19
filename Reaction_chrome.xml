@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Reaction">
+  
+  <test  name="Reaction" >
+   <parameter name="browser" value="chrome" />
+    <classes>
+      <class name="Stepdef.Reaction_register_first_use_notice"/>
+      <class name="Stepdef.Reaction_Login_first_use_notice"/>
+      <class name= "Stepdef.Reaction_Transaction"/>
+      </classes>
+  </test>  
+</suite> 

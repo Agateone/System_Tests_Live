@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Chrome">
+  
+  <test  name="Chrome" >
+   <parameter name="browser" value="Chrome" />
+    <classes>
+      <class name="Stepdef.Cricketer_Register_First_Use_Notice"/>
+      <class name="Stepdef.Cricketer_login_first_use_notice"/>
+      <class name="Stepdef.Cricketer_Transaction"/>
+      </classes>
+  </test>  
+</suite> 
