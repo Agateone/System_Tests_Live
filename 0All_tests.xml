@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name=" Popbitch Chrome">
+  <test  name="Chrome" >
+   <parameter name="browser" value="Chrome" />
+    <classes>
+      <class name="Stepdef.Popbitch_register_First_Use_notice"/>
+      <class name="Stepdef.Popbitch_login_First_Use_Notice"/>
+       <class name="Stepdef.popbitch_transaction"/>
+       <class name="Stepdef.Reaction_register_first_use_notice"/>
+      <class name="Stepdef.Reaction_Login_first_use_notice"/>
+      <class name= "Stepdef.Reaction_Transaction"/>
+      <class name="Stepdef.Cricketer_Register_First_Use_Notice"/>
+      <class name="Stepdef.Cricketer_login_first_use_notice"/>
+      <class name="Stepdef.Cricketer_Transaction"/>
+      <class name="Stepdef.Cornwall_Register"/>
+       <class name="Stepdef.Cornwall_Login_from_FUN"/>
+       <class name="Stepdef.Cornwall_Transaction"/>
+       <class name="Stepdef.Maidenhead_Register"/>  
+       <class name="Stepdef.Maidenhead_Login"/> 
+       <class name="Stepdef.Maidenhead_transaction"/> 
+       <class name="Stepdef.Slough_Register"/>  
+       <class name="Stepdef.Slough_Login"/> 
+       <class name="Stepdef.Slough_Transaction"/> 
+       <class name="Stepdef.Windsor_Register"/>  
+       <class name="Stepdef.windsor_Login"/> 
+       <class name="Stepdef.Windsor_transaction"/>
+       <class name="Stepdef.Scifi_Register"/>
+       <class name="Stepdef.Scifi_Transaction"/> 
+       <class name="Stepdef.newbury_Reg"/>
+       <class name="Stepdef.Newbury_Transaction"/> 
+       <class name="Stepdef.Grantham_Register"/>
+      <class name="Stepdef.Grantham_Login"/>
+      <class name="Stepdef.Grantham_Transaction"/>
+      <class name="Stepdef.Stamford_Register"/> 
+      <class name="Stepdef.Stamford_Login"/> 
+      <class name="Stepdef.Stamford_transaction"/>
+      <class name="Stepdef.Spalding_register"/>
+      <class name="Stepdef.Spalding_Login"/>
+      <class name="Stepdef.Spalding_transaction"/>
+      <class name="Stepdef.Fenland_Register"/>
+      <class name="Stepdef.Fenland_Login"/>
+      <class name="Stepdef.Fenland_Transaction"/>
+      <class name="Stepdef.Newark_Register"/>
+      <class name="Stepdef.Newark_Login"/>
+      <class name="Stepdef.Newark_Transaction"/>
+    </classes>
+  </test>  
+</suite> 
