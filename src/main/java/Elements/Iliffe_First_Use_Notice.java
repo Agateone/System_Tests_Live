@@ -13,6 +13,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.interactions.Actions;
 
 public class Iliffe_First_Use_Notice {
 
@@ -57,21 +58,38 @@ public class Iliffe_First_Use_Notice {
 				public void Click_On_Iliffe_First_Use_CreateWallet() throws InterruptedException, IOException {						
 					Thread.sleep(4000);
 					JavascriptExecutor js = (JavascriptExecutor)driver_Iliffe_First_Use_Notice;
-					js.executeScript("window.scrollBy(0,800)");
+					js.executeScript("window.scrollBy(0,400)");
 					Thread.sleep(2000);	
 					
-					//String screenshot_name= "Popbitch_Finish_notice_click_on_button";
-							String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-							File scrFile = ((TakesScreenshot)driver_Iliffe_First_Use_Notice).getScreenshotAs(OutputType.FILE);		
-							FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/Iliffe/"+"_"+timestamp+"_"+"jpg" ));	
+					
 					WebElement frame = 	driver_Iliffe_First_Use_Notice.findElement(By.xpath("//*[@id=\"iframe__inpage_notices\"]"));
 					driver_Iliffe_First_Use_Notice.switchTo().frame(frame);	
+					
+					
 					Boolean finding = driver_Iliffe_First_Use_Notice.findElement(By.xpath("//*[@id=\"btn_cta\"]")).isDisplayed();
 					System.out.println(finding);
+					
+					WebElement section = 	driver_Iliffe_First_Use_Notice.findElement(By.id("agate_section"));
+					
+					
+					
+					js.executeScript("arguments[0].scrollIntoViewIfNeeded(true);",section);
 					WebElement Iliffe_First_Use_CreateWallet= driver_Iliffe_First_Use_Notice.findElement(By.xpath("//*[@id=\"btn_cta\"]"));
+				
+					Thread.sleep(4000);
+					
+					//String screenshot_name= "Popbitch_Finish_notice_click_on_button";
+					String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
+					File scrFile = ((TakesScreenshot)driver_Iliffe_First_Use_Notice).getScreenshotAs(OutputType.FILE);		
+					FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/Iliffe/"+"_"+timestamp+"_"+"jpg" ));	
+					
+					Thread.sleep(4000);
 					JavascriptExecutor executor = (JavascriptExecutor)driver_Iliffe_First_Use_Notice;
 					executor.executeScript("arguments[0].click();", Iliffe_First_Use_CreateWallet);
-					Thread.sleep(4000);
+					
+					
+					
+					
 					driver_Iliffe_First_Use_Notice.switchTo().defaultContent();
 					}
 			

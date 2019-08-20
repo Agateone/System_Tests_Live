@@ -517,6 +517,72 @@ Thread.sleep(1000);
 		
 	}	
 	
+	if(url.contains("windsor"))
+	{
+		
+	
+		//Screenshot
+		//String screenshot_name_1= "Registration_step1_2";
+		String timestamp_1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
+		File scrFile_1 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(scrFile_1, new File("/Users/jay/Desktop/windsor/" +"_"+timestamp_1+"_"+"jpg" ));
+		
+		
+Thread.sleep(1000);
+		
+		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
+		Thread.sleep(10000);
+		
+		//Screenshot
+		//String screenshot_name_2= "Registration_step1_2";
+		String timestamp_2 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
+		File scrFile_2 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
+		FileUtils.copyFile(scrFile_2, new File("/Users/jay/Desktop/windsor/"+"_"+timestamp_2+"_"+"jpg" ));
+		
+		
+		
+		
+		//driver_Register_Page_Elements.findElement(Register_Page_topup_3).click();
+		//Thread.sleep(2000);
+		//driver_Register_Page_Elements.findElement(Register_Page_pay_by_card).click();
+		//System.out.println("\n"+"clciked on credit card"+"\n");
+		Thread.sleep(5000);
+		
+		
+		
+		
+		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/button[1]/div")).click();
+		Thread.sleep(2000);
+		driver_Register_Page_Elements.findElement(By.id("voucher_code")).sendKeys("JAY1234567");
+		Thread.sleep(1000);
+		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/button[1]/div/span")).click();
+		Thread.sleep(3000);
+		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/section[1]/div/div[2]/label[1]")).click();
+		Thread.sleep(1000);
+		
+	
+		
+		//driver_Register_Page_Elements.switchTo().frame("braintree-hosted-field-number");
+		
+		//driver_Register_Page_Elements.findElement(Register_Page_Card_Number).sendKeys("4111111111111111");
+		//Thread.sleep(400);
+		//driver_Register_Page_Elements.switchTo().defaultContent();
+		//driver_Register_Page_Elements.switchTo().frame("braintree-hosted-field-expirationDate");
+		//driver_Register_Page_Elements.findElement(Register_Page_Card_Expiry_Date).sendKeys("0319");
+		//Thread.sleep(400);
+		//driver_Register_Page_Elements.switchTo().defaultContent();
+		
+		
+		
+		//Screenshot
+		//String screenshot_name_3= "Registration_step1_2";
+		String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
+		File scrFile_3 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
+		FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/windsor/" +"_"+timestamp_3+"_"+"jpg" ));
+		
+		
+		
+	}	
 	
 	
 	if(url.contains("newburytoday"))
@@ -814,9 +880,138 @@ Thread.sleep(1000);
 		
 	}	
 	
+	if(url.contains("spaldingtoday"))
+	{	
+		//Screenshot
+		//String screenshot_name_1= "Registration_step1_2";
+		String timestamp_1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
+		File scrFile_1 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(scrFile_1, new File("/Users/jay/Desktop/spalding/" +"_"+timestamp_1+"_"+"jpg" ));		
+Thread.sleep(1000);		
+		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
+		Thread.sleep(10000);
+		//Screenshot
+		//String screenshot_name_2= "Registration_step1_2";
+		String timestamp_2 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
+		File scrFile_2 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
+		FileUtils.copyFile(scrFile_2, new File("/Users/jay/Desktop/spalding/"+"_"+timestamp_2+"_"+"jpg" ));		
+		//driver_Register_Page_Elements.findElement(Register_Page_topup_3).click();
+		//Thread.sleep(2000);
+		//driver_Register_Page_Elements.findElement(Register_Page_pay_by_card).click();
+		//System.out.println("\n"+"clciked on credit card"+"\n");
+		Thread.sleep(5000);		
+		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/button[1]/div")).click();
+		Thread.sleep(2000);
+		driver_Register_Page_Elements.findElement(By.id("voucher_code")).sendKeys("jay1111");
+		Thread.sleep(1000);
+		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/button[1]/div/span")).click();
+		Thread.sleep(3000);
+		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/section[1]/div/div[2]/label[1]")).click();
+		Thread.sleep(1000);		
+		//driver_Register_Page_Elements.switchTo().frame("braintree-hosted-field-number");
+		//driver_Register_Page_Elements.findElement(Register_Page_Card_Number).sendKeys("4111111111111111");
+		//Thread.sleep(400);
+		//driver_Register_Page_Elements.switchTo().defaultContent();
+		//driver_Register_Page_Elements.switchTo().frame("braintree-hosted-field-expirationDate");
+		//driver_Register_Page_Elements.findElement(Register_Page_Card_Expiry_Date).sendKeys("0319");
+		//Thread.sleep(400);
+		//driver_Register_Page_Elements.switchTo().defaultContent();		
+		//Screenshot
+		//String screenshot_name_3= "Registration_step1_2";
+		String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
+		File scrFile_3 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
+		FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/spalding/" +"_"+timestamp_3+"_"+"jpg" ));
+		
+	}	
+	
+	if(url.contains("fenlandcitizen"))
+	{	
+		//Screenshot
+		//String screenshot_name_1= "Registration_step1_2";
+		String timestamp_1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
+		File scrFile_1 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(scrFile_1, new File("/Users/jay/Desktop/fenland/" +"_"+timestamp_1+"_"+"jpg" ));		
+Thread.sleep(1000);		
+		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
+		Thread.sleep(10000);
+		//Screenshot
+		//String screenshot_name_2= "Registration_step1_2";
+		String timestamp_2 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
+		File scrFile_2 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
+		FileUtils.copyFile(scrFile_2, new File("/Users/jay/Desktop/fenland/"+"_"+timestamp_2+"_"+"jpg" ));		
+		//driver_Register_Page_Elements.findElement(Register_Page_topup_3).click();
+		//Thread.sleep(2000);
+		//driver_Register_Page_Elements.findElement(Register_Page_pay_by_card).click();
+		//System.out.println("\n"+"clciked on credit card"+"\n");
+		Thread.sleep(5000);		
+		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/button[1]/div")).click();
+		Thread.sleep(2000);
+		driver_Register_Page_Elements.findElement(By.id("voucher_code")).sendKeys("jay1111");
+		Thread.sleep(1000);
+		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/button[1]/div/span")).click();
+		Thread.sleep(3000);
+		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/section[1]/div/div[2]/label[1]")).click();
+		Thread.sleep(1000);		
+		//driver_Register_Page_Elements.switchTo().frame("braintree-hosted-field-number");
+		//driver_Register_Page_Elements.findElement(Register_Page_Card_Number).sendKeys("4111111111111111");
+		//Thread.sleep(400);
+		//driver_Register_Page_Elements.switchTo().defaultContent();
+		//driver_Register_Page_Elements.switchTo().frame("braintree-hosted-field-expirationDate");
+		//driver_Register_Page_Elements.findElement(Register_Page_Card_Expiry_Date).sendKeys("0319");
+		//Thread.sleep(400);
+		//driver_Register_Page_Elements.switchTo().defaultContent();		
+		//Screenshot
+		//String screenshot_name_3= "Registration_step1_2";
+		String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
+		File scrFile_3 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
+		FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/fenland/" +"_"+timestamp_3+"_"+"jpg" ));
+		
+	}	
 	
 	
-	
+	if(url.contains("newarkadvertiser"))
+	{	
+		//Screenshot
+		//String screenshot_name_1= "Registration_step1_2";
+		String timestamp_1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
+		File scrFile_1 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(scrFile_1, new File("/Users/jay/Desktop/newark/" +"_"+timestamp_1+"_"+"jpg" ));		
+Thread.sleep(1000);		
+		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
+		Thread.sleep(10000);
+		//Screenshot
+		//String screenshot_name_2= "Registration_step1_2";
+		String timestamp_2 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
+		File scrFile_2 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
+		FileUtils.copyFile(scrFile_2, new File("/Users/jay/Desktop/newark/"+"_"+timestamp_2+"_"+"jpg" ));		
+		//driver_Register_Page_Elements.findElement(Register_Page_topup_3).click();
+		//Thread.sleep(2000);
+		//driver_Register_Page_Elements.findElement(Register_Page_pay_by_card).click();
+		//System.out.println("\n"+"clciked on credit card"+"\n");
+		Thread.sleep(5000);		
+		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/button[1]/div")).click();
+		Thread.sleep(2000);
+		driver_Register_Page_Elements.findElement(By.id("voucher_code")).sendKeys("jay1111");
+		Thread.sleep(1000);
+		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/button[1]/div/span")).click();
+		Thread.sleep(3000);
+		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/section[1]/div/div[2]/label[1]")).click();
+		Thread.sleep(1000);		
+		//driver_Register_Page_Elements.switchTo().frame("braintree-hosted-field-number");
+		//driver_Register_Page_Elements.findElement(Register_Page_Card_Number).sendKeys("4111111111111111");
+		//Thread.sleep(400);
+		//driver_Register_Page_Elements.switchTo().defaultContent();
+		//driver_Register_Page_Elements.switchTo().frame("braintree-hosted-field-expirationDate");
+		//driver_Register_Page_Elements.findElement(Register_Page_Card_Expiry_Date).sendKeys("0319");
+		//Thread.sleep(400);
+		//driver_Register_Page_Elements.switchTo().defaultContent();		
+		//Screenshot
+		//String screenshot_name_3= "Registration_step1_2";
+		String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
+		File scrFile_3 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
+		FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/newark/" +"_"+timestamp_3+"_"+"jpg" ));
+		
+	}	
 		driver_Register_Page_Elements.findElement(Register_page_2_Continue).click();
 		
 		System.out.println("\n"+"Registered with the email "+ randomEmail +"\n");

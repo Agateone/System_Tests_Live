@@ -226,7 +226,7 @@ public class Newbury_Transaction {
 						expected_balance_global= balance_after;	
 						
 				
-			//GET FREE POINT AFTER THE TWO TRANSACTIONS
+			/*//GET FREE POINT AFTER THE TWO TRANSACTIONS
 				Thread.sleep(2000); 
 				String free_point_after_2_articles_string= wallet_elements_1.Free_point();
 				//int Popbitch_actual_free_point_after_2_articles = Integer.parseInt(free_point_after_2_articles_string);
@@ -246,7 +246,10 @@ public class Newbury_Transaction {
 							
 							System.out.println("Alert!!! Free point is not expected to be "+free_point_after_2_articles_string+ "please check, it should be " + Popbitch_expected_free_point_after_2_articles );
 					
-						}
+		
+						
+						
+						}*/
 		}
 		
 		
@@ -294,7 +297,7 @@ public class Newbury_Transaction {
 					
 			
 		
-					//GET FREE POINT AFTER THE TWO TRANSACTIONS
+			/*		//GET FREE POINT AFTER THE TWO TRANSACTIONS
 					Thread.sleep(2000); 
 					String free_point_after_2_articles_string= wallet_elements_1.Free_point();
 					//int Popbitch_actual_free_point_after_2_articles = Integer.parseInt(free_point_after_2_articles_string);
@@ -314,7 +317,7 @@ public class Newbury_Transaction {
 								
 								System.out.println("Alert!!! Free point is not expected to be "+free_point_after_2_articles_string+ "please check, it should be " + Popbitch_expected_free_point_after_2_articles );
 						
-							}
+							}*/
 			
 			
 			System.out.println("\n"+"wallet balance on reaction is "+balance_after+"\n");
@@ -357,7 +360,7 @@ public class Newbury_Transaction {
 						expected_balance_global= balance_after;	
 						
 				
-			//GET FREE POINT AFTER THE TWO TRANSACTIONS
+		/*	//GET FREE POINT AFTER THE TWO TRANSACTIONS
 				Thread.sleep(2000); 
 				String free_point_after_2_articles_string= wallet_elements_1.Free_point();
 				System.out.println("******"+free_point_after_2_articles_string+"****");
@@ -379,7 +382,7 @@ public class Newbury_Transaction {
 							
 							System.out.println("Alert!!! Free point is not expected to be "+free_point_after_2_articles_string+ "please check, it should be " + Popbitch_expected_free_point_after_2_articles );
 					
-						}
+						}*/
 			
 		}
 
@@ -422,7 +425,7 @@ public class Newbury_Transaction {
 						expected_balance_global= balance_after;	
 						
 				
-						//GET FREE POINT AFTER THE TWO TRANSACTIONS
+			/*			//GET FREE POINT AFTER THE TWO TRANSACTIONS
 						Thread.sleep(2000); 
 						String free_point_after_2_articles_string= wallet_elements_1.Free_point();
 						//int Popbitch_actual_free_point_after_2_articles = Integer.parseInt(free_point_after_2_articles_string);
@@ -443,7 +446,7 @@ public class Newbury_Transaction {
 									System.out.println("Alert!!! Free point is not expected to be "+free_point_after_2_articles_string+ "please check, it should be " + Popbitch_expected_free_point_after_2_articles );
 							
 								}
-				
+				*/
 				
 				System.out.println("\n"+"wallet balance on reaction is "+balance_after+"\n");
 				//System.out.println("\n"+"free point on reaction is £1.20"+"\n");
@@ -487,7 +490,7 @@ public class Newbury_Transaction {
 						expected_balance_global= balance_after;	
 						
 				
-			//GET FREE POINT AFTER THE TWO TRANSACTIONS
+		/*	//GET FREE POINT AFTER THE TWO TRANSACTIONS
 				Thread.sleep(2000); 
 				String free_point_after_2_articles_string= wallet_elements_1.Free_point();
 				//int Popbitch_actual_free_point_after_2_articles = Integer.parseInt(free_point_after_2_articles_string);
@@ -507,7 +510,7 @@ public class Newbury_Transaction {
 							
 							System.out.println("Alert!!! Free point is not expected to be "+free_point_after_2_articles_string+ "please check, it should be " + Popbitch_expected_free_point_after_2_articles );
 					
-						}
+						}*/
 		}
 
 		@Then("Slough wallet balance remains and is uneffected by newbury")
@@ -547,7 +550,7 @@ public class Newbury_Transaction {
 						expected_balance_global= balance_after;	
 						
 				
-			//GET FREE POINT AFTER THE TWO TRANSACTIONS
+		/*	//GET FREE POINT AFTER THE TWO TRANSACTIONS
 				Thread.sleep(2000); 
 				String free_point_after_2_articles_string= wallet_elements_1.Free_point();
 				//int Popbitch_actual_free_point_after_2_articles = Integer.parseInt(free_point_after_2_articles_string);
@@ -567,7 +570,7 @@ public class Newbury_Transaction {
 							
 							System.out.println("Alert!!! Free point is not expected to be "+free_point_after_2_articles_string+ "please check, it should be " + Popbitch_expected_free_point_after_2_articles );
 					
-						}
+						}*/
 		}
 
 		@Then("Windsor wallet balance remains and is uneffected by newbury")
@@ -607,7 +610,7 @@ public class Newbury_Transaction {
 						expected_balance_global= balance_after;	
 						
 				
-			//GET FREE POINT AFTER THE TWO TRANSACTIONS
+		/*	//GET FREE POINT AFTER THE TWO TRANSACTIONS
 				Thread.sleep(2000); 
 				String free_point_after_2_articles_string= wallet_elements_1.Free_point();
 				//int Popbitch_actual_free_point_after_2_articles = Integer.parseInt(free_point_after_2_articles_string);
@@ -627,7 +630,7 @@ public class Newbury_Transaction {
 							
 							System.out.println("Alert!!! Free point is not expected to be "+free_point_after_2_articles_string+ "please check, it should be " + Popbitch_expected_free_point_after_2_articles );
 					
-						}
+						}*/
 		}
 
 
