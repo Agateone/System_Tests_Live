@@ -64,9 +64,7 @@ public class popbitch_transaction {
 			throw e0;
 		}
 	    System.out.println("Popbitch staging is ready to be tested");
-		File scrFile = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);
-		String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp+"_"+"jpg" ));	
+		
 	
 		Thread.sleep(4000);
 		PopbitchFirstUseNoticeElements pop_first_use = new PopbitchFirstUseNoticeElements(driver_transaction_staging_popbitch);
@@ -74,9 +72,7 @@ public class popbitch_transaction {
 		System.out.println("\n"+"Clicked on login"+"\n");
 	
 		Thread.sleep(8000);
-		File scrFile5 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);
-		String timestamp5 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		FileUtils.copyFile(scrFile5, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp5+"_"+"jpg" ));	
+		
 		Thread.sleep(2000);
 		String Login_From_PopBitch_Frist_Use_Notice_Current_Url= driver_transaction_staging_popbitch.getCurrentUrl();
 	    System.out.println("\n"+"Clicking on login redirected to login page satging"+"\n");
@@ -88,9 +84,7 @@ public class popbitch_transaction {
 		Thread.sleep(2000);
 		Login_Pop_First_Use.Login_Process("Ajjukanna1$$");
 		Thread.sleep(10000);
-		File scrFile6 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);
-		String timestamp6 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		FileUtils.copyFile(scrFile6, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp6+"_"+"jpg" ));	
+		
 		System.out.println("\n"+"Login successfull"+"\n");
 	
 	
@@ -106,10 +100,7 @@ public class popbitch_transaction {
 		driver_transaction_staging_popbitch.navigate().to("https://popbitch.com/2019/02/love-letters/");
 		Thread.sleep(4000);	
 		
-	//get screen shot of the wallet
-		File scrFile6 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);
-		String timestamp6 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		FileUtils.copyFile(scrFile6, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp6+"_"+"jpg" ));
+	
 		
 	//Click on the green tab and 
 		PopbitchFirstUseNoticeElements pop_first_use_top_up_from_wallet2 = new PopbitchFirstUseNoticeElements(driver_transaction_staging_popbitch);
@@ -146,51 +137,15 @@ public class popbitch_transaction {
 		
 	//GET FREE POINT AFTER THE TWO TRANSACTIONS
 		Thread.sleep(2000);
-		Popbitch_Wallet_Elements_staging wallet_elements_1 = new Popbitch_Wallet_Elements_staging(driver_transaction_staging_popbitch); 
-		//GET FREE POINT AFTER THE TWO TRANSACTIONS
-		Thread.sleep(2000); 
-		String free_point_after_2_articles_string= wallet_elements_1.Free_point_free();
 		
-		//int Popbitch_actual_free_point_after_2_articles = Integer.parseInt(free_point_after_2_articles_string);
-		String Popbitch_expected_free_point_after_2_articles= "Free";
 		
-		//int Popbitch_actual_free_point_after_2_articles = Integer.parseInt(free_point_after_2_articles_string);
-		//int Popbitch_expected_free_point_after_2_articles= 0;
-			
-			//Verify if actual free point matches expected free point
-				AssertJUnit.assertEquals(free_point_after_2_articles_string,Popbitch_expected_free_point_after_2_articles);
-				if(Popbitch_expected_free_point_after_2_articles==free_point_after_2_articles_string)
-				{
-					System.out.println("Free point is expected to be "+	free_point_after_2_articles_string  );
-					
-				}
-				else
-				{
-					
-					System.out.println("Alert!!! Free point is not expected to be "+free_point_after_2_articles_string+ "please check, it should be " + Popbitch_expected_free_point_after_2_articles );
-			
-				}
-	
-	// verify price per article on the wallet
-		Thread.sleep(2000);
-		String Popbitch_price_per_article= wallet_elements_1.price_per_article_on_wallet();
-		int Popbitch_wallet_actual_price_per_article = Integer.parseInt(Popbitch_price_per_article);
-		int Popbitch_wallet_expected_price_per_article= 25;
-	
-	//Verify if actual price per article matches expected free point
-		AssertJUnit.assertEquals(Popbitch_wallet_actual_price_per_article,Popbitch_wallet_expected_price_per_article);
-		if(Popbitch_wallet_actual_price_per_article==Popbitch_wallet_expected_price_per_article)
-		{
-			System.out.println("Price per article on the wallet is expected to be "+	Popbitch_wallet_actual_price_per_article  );
-			
-		}
-		else
-		{
-			
-			System.out.println("Alert!!! Price per article on the wallet is not expected to be "+Popbitch_wallet_actual_price_per_article+ "please check, it should be " + Popbitch_wallet_expected_price_per_article );
-	
-		}
 		
+		
+			
+			
+	
+	
+	
 		
 		
 	
@@ -217,10 +172,7 @@ public class popbitch_transaction {
 		pop_first_use_top_up_from_wallet2.click_on_green_tab();
 		
 		
-		//get screen shot of the wallet
-		File scrFile6 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);
-		String timestamp6 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		FileUtils.copyFile(scrFile6, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp6+"_"+"jpg" ));
+		
 			
 		//get the balance after two transactions. since we topped up with £2 the balance should be 1.50
 		Thread.sleep(2000);
@@ -274,25 +226,16 @@ public class popbitch_transaction {
 				Thread.sleep(3000);
 				
 				
-				//String screenshot_name_3= "Popbitch_full_article_appears";
-				String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-				File scrFile_3 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);		
-				FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp_3+"_"+"jpg" ));
-				Thread.sleep(3000);
+				
 				JavascriptExecutor js = (JavascriptExecutor)driver_transaction_staging_popbitch;
 				js.executeScript("window.scrollBy(0,500)");
 				
-			//String screenshot_name_4= "Popbitch_full_article_appears_2";
-				String timestamp_4 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-				File scrFile_4 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);		
-				FileUtils.copyFile(scrFile_4, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp_4+"_"+"jpg" ));		
+			
 				Thread.sleep(3000);		
 				JavascriptExecutor js1 = (JavascriptExecutor)driver_transaction_staging_popbitch;
 				js1.executeScript("window.scrollBy(0,500)");		
-				String timestamp_5 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-				File scrFile_5 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);		
-				FileUtils.copyFile(scrFile_5, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp_5+"_"+"jpg" ));
-				Thread.sleep(1000);
+			
+				
 				
 			//Verify the user landed on the same article
 				String Login_From_PopBitch_Frist_Use_Notice_Current_Url1= driver_transaction_staging_popbitch.getCurrentUrl();	   
@@ -306,10 +249,7 @@ public class popbitch_transaction {
 				pop_first_use_top_up_from_wallet2.click_on_green_tab();
 				
 				
-			//get screen shot of the wallet
-				File scrFile7 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);
-				String timestamp7 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-				FileUtils.copyFile(scrFile7, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp7+"_"+"jpg" ));
+			
 					
 			//get the balance after two transactions. since we topped up with £2 the balance should be 1.50
 				Thread.sleep(2000);
@@ -345,10 +285,7 @@ public class popbitch_transaction {
 			PopbitchFirstUseNoticeElements pop_first_use_top_up_from_wallet2 = new PopbitchFirstUseNoticeElements(driver_transaction_staging_popbitch);
 			pop_first_use_top_up_from_wallet2.click_on_green_tab();
 		
-		//get screen shot of the wallet
-			File scrFile6 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);
-			String timestamp6 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-			FileUtils.copyFile(scrFile6, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp6+"_"+"jpg" ));
+		
 				
 		//get the balance after two transactions. since we topped up with £2 the balance should be 1.50
 			Thread.sleep(2000);
@@ -400,26 +337,15 @@ public class popbitch_transaction {
 			authy2.authorise_charge_notice_click_continue();
 			Thread.sleep(3000);
 			
-			
-			//String screenshot_name_3= "Popbitch_full_article_appears";
-			String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-			File scrFile_3 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);		
-			FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp_3+"_"+"jpg" ));
-			Thread.sleep(3000);
+		
 			JavascriptExecutor js = (JavascriptExecutor)driver_transaction_staging_popbitch;
 			js.executeScript("window.scrollBy(0,500)");
 			
-		//String screenshot_name_4= "Popbitch_full_article_appears_2";
-			String timestamp_4 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-			File scrFile_4 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);		
-			FileUtils.copyFile(scrFile_4, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp_4+"_"+"jpg" ));		
+			
 			Thread.sleep(3000);		
 			JavascriptExecutor js1 = (JavascriptExecutor)driver_transaction_staging_popbitch;
 			js1.executeScript("window.scrollBy(0,500)");		
-			String timestamp_5 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-			File scrFile_5 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);		
-			FileUtils.copyFile(scrFile_5, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp_5+"_"+"jpg" ));
-			Thread.sleep(1000);
+			
 			
 		//Verify the user landed on the same article
 			String Login_From_PopBitch_Frist_Use_Notice_Current_Url1= driver_transaction_staging_popbitch.getCurrentUrl();	   
@@ -433,11 +359,7 @@ public class popbitch_transaction {
 			pop_first_use_top_up_from_wallet2.click_on_green_tab();
 			
 			
-		//get screen shot of the wallet
-			File scrFile7 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);
-			String timestamp7 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-			FileUtils.copyFile(scrFile7, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp7+"_"+"jpg" ));
-				
+		
 		//get the balance after two transactions. since we topped up with £2 the balance should be 1.50
 			Thread.sleep(2000);
 			
@@ -478,10 +400,7 @@ public class popbitch_transaction {
 			PopbitchFirstUseNoticeElements pop_first_use_top_up_from_wallet2 = new PopbitchFirstUseNoticeElements(driver_transaction_staging_popbitch);
 			pop_first_use_top_up_from_wallet2.click_on_green_tab();
 		
-		//get screen shot of the wallet
-			File scrFile6 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);
-			String timestamp6 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-			FileUtils.copyFile(scrFile6, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp6+"_"+"jpg" ));
+		
 				
 		//get the balance after two transactions. since we topped up with £2 the balance should be 1.50
 			Thread.sleep(2000);
@@ -521,25 +440,14 @@ public class popbitch_transaction {
 					Thread.sleep(3000);
 					
 					
-					//String screenshot_name_3= "Popbitch_full_article_appears";
-					String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-					File scrFile_3 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);		
-					FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp_3+"_"+"jpg" ));
-					Thread.sleep(3000);
+					
 					JavascriptExecutor js = (JavascriptExecutor)driver_transaction_staging_popbitch;
 					js.executeScript("window.scrollBy(0,500)");
 					
-				//String screenshot_name_4= "Popbitch_full_article_appears_2";
-					String timestamp_4 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-					File scrFile_4 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);		
-					FileUtils.copyFile(scrFile_4, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp_4+"_"+"jpg" ));		
-					Thread.sleep(3000);		
+					
 					JavascriptExecutor js1 = (JavascriptExecutor)driver_transaction_staging_popbitch;
 					js1.executeScript("window.scrollBy(0,500)");		
-					String timestamp_5 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-					File scrFile_5 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);		
-					FileUtils.copyFile(scrFile_5, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp_5+"_"+"jpg" ));
-					Thread.sleep(1000);
+					
 					
 				//Verify the user landed on the same article
 					String Login_From_PopBitch_Frist_Use_Notice_Current_Url1= driver_transaction_staging_popbitch.getCurrentUrl();	   
@@ -553,10 +461,7 @@ public class popbitch_transaction {
 					pop_first_use_top_up_from_wallet2.click_on_green_tab();
 					
 					
-				//get screen shot of the wallet
-					File scrFile7 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);
-					String timestamp7 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-					FileUtils.copyFile(scrFile7, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp7+"_"+"jpg" ));
+			
 						
 				//get the balance after two transactions. since we topped up with £2 the balance should be 1.50
 					Thread.sleep(2000);
@@ -595,11 +500,7 @@ public class popbitch_transaction {
 			PopbitchFirstUseNoticeElements pop_first_use_top_up_from_wallet2 = new PopbitchFirstUseNoticeElements(driver_transaction_staging_popbitch);
 			pop_first_use_top_up_from_wallet2.click_on_green_tab();
 			
-			//get screen shot of the wallet
-			File scrFile6 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);
-			String timestamp6 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-			FileUtils.copyFile(scrFile6, new File("/Users/jay/Desktop/cricketer/"+"_"+timestamp6+"_"+"jpg" ));
-				
+			
 		//get the balance after two transactions. since we topped up with £2 the balance should be 1.50
 			Thread.sleep(2000);
 			Popbitch_Wallet_Elements_staging wallet_elements_1 = new Popbitch_Wallet_Elements_staging(driver_transaction_staging_popbitch); 
@@ -638,24 +539,15 @@ public class popbitch_transaction {
 					Thread.sleep(3000);
 					
 					
-					//String screenshot_name_3= "Popbitch_full_article_appears";
-					String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-					File scrFile_3 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);		
-					FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp_3+"_"+"jpg" ));
-					Thread.sleep(3000);
+					
 					JavascriptExecutor js = (JavascriptExecutor)driver_transaction_staging_popbitch;
 					js.executeScript("window.scrollBy(0,500)");
 					
-				//String screenshot_name_4= "Popbitch_full_article_appears_2";
-					String timestamp_4 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-					File scrFile_4 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);		
-					FileUtils.copyFile(scrFile_4, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp_4+"_"+"jpg" ));		
+			
 					Thread.sleep(3000);		
 					JavascriptExecutor js1 = (JavascriptExecutor)driver_transaction_staging_popbitch;
 					js1.executeScript("window.scrollBy(0,500)");		
-					String timestamp_5 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-					File scrFile_5 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);		
-					FileUtils.copyFile(scrFile_5, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp_5+"_"+"jpg" ));
+					
 					Thread.sleep(1000);
 					
 				
@@ -664,10 +556,7 @@ public class popbitch_transaction {
 					pop_first_use_top_up_from_wallet2.click_on_green_tab();
 					
 					
-				//get screen shot of the wallet
-					File scrFile7 = ((TakesScreenshot)driver_transaction_staging_popbitch).getScreenshotAs(OutputType.FILE);
-					String timestamp7 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-					FileUtils.copyFile(scrFile7, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp7+"_"+"jpg" ));
+				
 						
 				//get the balance after two transactions. since we topped up with £2 the balance should be 1.50
 					Thread.sleep(2000);

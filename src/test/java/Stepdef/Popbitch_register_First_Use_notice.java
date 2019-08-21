@@ -66,10 +66,7 @@ public class Popbitch_register_First_Use_notice {
 		JavascriptExecutor js = (JavascriptExecutor)Driver_Register_From_Popbitch_Firstuse_Notice;
 		js.executeScript("window.scrollBy(0,500)");
 		Thread.sleep(3000);	
-		//Screen shot of browser navigated to article
-		File scrFile = ((TakesScreenshot)Driver_Register_From_Popbitch_Firstuse_Notice).getScreenshotAs(OutputType.FILE);
-		String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp+"_"+"jpg" ));	
+	
 	}
 
 	//Click on create wallet on popbitch first use notice
@@ -89,10 +86,8 @@ public class Popbitch_register_First_Use_notice {
 	public void i_verify_that_the_create_wallet_button_navigates_me_to_the_sign_up_page() throws Throwable {			
 		//screenshot of reg page
 		Thread.sleep(8000);
-		String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile = ((TakesScreenshot)Driver_Register_From_Popbitch_Firstuse_Notice).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp+"_"+"jpg" ));	
-		Thread.sleep(3000);		
+		
+		
 		//Scoll to the second half of Reg page
 		JavascriptExecutor js = (JavascriptExecutor)Driver_Register_From_Popbitch_Firstuse_Notice;
 		js.executeScript("window.scrollBy(0,500)");
@@ -148,10 +143,7 @@ public class Popbitch_register_First_Use_notice {
 	public void finish_Notice_appears() throws Throwable {
 		Thread.sleep(5000);
 	
-	//Screen shot of finish notice
-		String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile = ((TakesScreenshot)Driver_Register_From_Popbitch_Firstuse_Notice).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp+"_"+"jpg" ));
+	
 	
 	//Verify that the finish notice appears
 		Popbitch_Finish_Notice_elements pop_finish = new Popbitch_Finish_Notice_elements(Driver_Register_From_Popbitch_Firstuse_Notice);
@@ -175,10 +167,7 @@ public class Popbitch_register_First_Use_notice {
 	@Test(priority=7)
 	public void finish_notice_elements_are_displayed() throws Throwable {
 
-	//Screen shot of authorise charge notice
-		String timestamp_2 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_2 = ((TakesScreenshot)Driver_Register_From_Popbitch_Firstuse_Notice).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_2, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp_2+"_"+"jpg" ));
+	
 	
 		
 	//first verify that wallet has been topped up by £2.00
@@ -235,11 +224,7 @@ public class Popbitch_register_First_Use_notice {
 		authy_popbitch.authorise_charge_notice_click_continue();
 		Thread.sleep(3000);
 
-	//Screen shot of article 1
-		String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_3 = ((TakesScreenshot)Driver_Register_From_Popbitch_Firstuse_Notice).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp_3+"_"+"jpg" ));
-		Thread.sleep(3000);
+	
 		
 	//check if the wallet is being deducted by 25 p after the first transaction
 	//first get the current balance
@@ -295,10 +280,7 @@ public class Popbitch_register_First_Use_notice {
 	//scroll for full article
 		js.executeScript("window.scrollBy(0,500)");
 		
-	//Screen shot of article 3		
-		String timestamp_5 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_5 = ((TakesScreenshot)Driver_Register_From_Popbitch_Firstuse_Notice).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_5, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp_5+"_"+"jpg" ));
+	
 
 		
 	
