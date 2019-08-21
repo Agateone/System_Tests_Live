@@ -3,16 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Stepdef.Cricketer_Transaction">
+      <class name="Stepdef.Popbitch_register_First_Use_notice">
         <methods>
-          <include name="cornwall_wallet_balance_remains_and_is_uneffected_according_to_cricketer"/>
-          <include name="reaction_wallet_balance_is_updated_and_free_point_remains_uneffected"/>
-          <include name="the_wallet_balance_and_free_point_are_deducted_by_x_amount_on_cricketer_wallet"/>
-          <include name="the_popbitch_wallet_balance_is_updated_same_as_cricketer_and_free_point_remains_uneffected"/>
-          <include name="i_am_a_registered_Agate_User_and_I_login_in_to_Cricketer"/>
-          <include name="i_read_a_premium_article_on_cricketer"/>
+          <include name="finish_notice_elements_are_displayed"/>
+          <include name="i_login_successfully"/>
+          <include name="i_click_on_the_create_agate_wallet_from_the_first_use_notice"/>
+          <include name="i_verify_that_the_create_wallet_button_navigates_me_to_the_sign_up_page"/>
+          <include name="finish_Notice_appears"/>
+          <include name="i_enter_the_correct_details_and_hit_the_Register_button"/>
+          <include name="i_am_not_a_user_of_Agate_I_open_a_browser"/>
+          <include name="i_navigate_to_popbitch_com_from_the_browser"/>
         </methods>
-      </class> <!-- Stepdef.Cricketer_Transaction -->
+      </class> <!-- Stepdef.Popbitch_register_First_Use_notice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
