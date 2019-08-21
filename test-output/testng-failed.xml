@@ -1,30 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Chrome]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ Popbitch Chrome]">
   <test thread-count="5" name="Chrome(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="Stepdef.windsor_Login">
+      <class name="Stepdef.popbitch_transaction">
         <methods>
-          <include name="entering_the_correct_email_and_password_logs_me_in_to_windsor"/>
-          <include name="i_verify_that_the_Login_Button_Navigates_me_to_the_login_page_to_log_me_in_to_windsor"/>
-          <include name="verify_that_I_am_being_navigated_to_the_same_article_on_windsor"/>
-          <include name="i_navigate_to_a_premium_article_on_windsor"/>
+          <include name="slug_recognition_works_on_Slough"/>
+          <include name="windsor_wallet_balance_remains_and_is_uneffected_by_Maiadenhead"/>
+          <include name="slug_recognition_works_on_Windsor"/>
+          <include name="slough_wallet_balance_remains_and_is_uneffected_by_Maiadenhead"/>
+          <include name="slug_recognition_works_on_maidenhead_from_popbitch"/>
         </methods>
-      </class> <!-- Stepdef.windsor_Login -->
-      <class name="Stepdef.Windsor_transaction">
-        <methods>
-          <include name="cricketer_wallet_balance_remains_and_is_uneffected_by_windsor"/>
-          <include name="slug_recognition_works_on_Windsor_from_windsor"/>
-          <include name="slug_recognition_works_on_maidenhead_from_windsor"/>
-          <include name="the_popbitch_wallet_balance_is_updated_same_as_windsor_and_free_point_remains_uneffected"/>
-          <include name="reaction_wallet_balance_is_updated_and_free_point_remains_uneffected_same_as_windsor"/>
-          <include name="slough_wallet_balance_remains_and_is_uneffected_by_windsor"/>
-          <include name="cornwall_wallet_balance_remains_and_is_uneffected_by_windsor"/>
-          <include name="i_read_a_premium_article_on_windsor"/>
-          <include name="windsor_wallet_balance_remains_and_is_uneffected_by_windsor"/>
-        </methods>
-      </class> <!-- Stepdef.Windsor_transaction -->
+      </class> <!-- Stepdef.popbitch_transaction -->
     </classes>
   </test> <!-- Chrome(failed) -->
-</suite> <!-- Failed suite [Chrome] -->
+</suite> <!-- Failed suite [ Popbitch Chrome] -->

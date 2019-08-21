@@ -215,7 +215,7 @@ Thread.sleep(1000);
 		
 		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/button[1]/div")).click();
 		Thread.sleep(2000);
-		driver_Register_Page_Elements.findElement(By.id("voucher_code")).sendKeys("JAY1234567");
+		driver_Register_Page_Elements.findElement(By.id("voucher_code")).sendKeys("jay1111");
 		Thread.sleep(1000);
 		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/button[1]/div/span")).click();
 		Thread.sleep(3000);

@@ -126,7 +126,7 @@ public class Popbitch_login_First_Use_Notice {
 				
 			//convert string balances to double
 				double balance_after_first_article = Double.parseDouble(Balance_after_fist_Article);
-				double expected_balance_after_first_article = 1.75;
+				double expected_balance_after_first_article = 9.75;
 				
 			//verify whether the expected balance is the actual balance
 				AssertJUnit.assertEquals(expected_balance_after_first_article, balance_after_first_article);

@@ -196,7 +196,7 @@ public class Popbitch_register_First_Use_notice {
 		
 	//convert string balances to double
 		double balance_after = Double.parseDouble(Balance_after_topping_up);
-		double expected_balance = 2.00;
+		double expected_balance = 10.00;
 		
 	//verify whether the expected balance is the actual balance
 		AssertJUnit.assertEquals(expected_balance, balance_after);
