@@ -1,15 +1,11 @@
 package Elements;
 
 
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 
-import org.apache.commons.io.FileUtils;
+import java.io.IOException;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+
 import org.openqa.selenium.WebDriver;
 
 public class Login_Page_Elements {
@@ -65,9 +61,7 @@ public void Login_Process(String login_password1) throws IOException, Interrupte
 	driver_Login_Page_Elements.findElement(Login_Page_password).sendKeys(login_password1);
 	driver_Login_Page_Elements.findElement(Login_Page_remember_me).click();
 	Thread.sleep(2000);
-	File scrFile = ((TakesScreenshot)driver_Login_Page_Elements).getScreenshotAs(OutputType.FILE);
-	String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-	FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/api/"+"_"+timestamp+"_"+"jpg" ));	
+
 	driver_Login_Page_Elements.findElement(Login_Page_Login_Button).click();
 	}
 
