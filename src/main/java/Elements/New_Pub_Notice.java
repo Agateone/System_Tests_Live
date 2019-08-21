@@ -1,14 +1,12 @@
 package Elements;
 
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 
-import org.apache.commons.io.FileUtils;
+import java.io.IOException;
+
+
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -50,10 +48,7 @@ WebDriver driver_newpub_notice;
 		driver_newpub_notice.findElement(Newpub_Notice_continue_reading).click();
 		driver_newpub_notice.switchTo().defaultContent();
 		Thread.sleep(8000);
-		//String screenshot_name= "Popbitch_authorise_charge_notice";
-		String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile = ((TakesScreenshot)driver_newpub_notice).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp+"_"+"jpg" ));
+		
 		
 	}
 	

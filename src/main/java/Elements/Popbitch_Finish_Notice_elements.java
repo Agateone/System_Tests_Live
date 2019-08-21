@@ -1,15 +1,13 @@
 package Elements;
 
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 
-import org.apache.commons.io.FileUtils;
+import java.io.IOException;
+
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 //import org.openqa.selenium.interactions.Actions;
@@ -60,10 +58,7 @@ WebElement authorise_button = driver_Popbitch_Finish_Notice_elements.findElement
 	
 	
 		Thread.sleep(4000);
-		//String screenshot_name= "Popbitch_Finish_notice_click_on_button";
-		String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile = ((TakesScreenshot)driver_Popbitch_Finish_Notice_elements).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/popbitch/"+"_"+timestamp+"_"+"jpg" ));	
+		
 		driver_Popbitch_Finish_Notice_elements.switchTo().defaultContent();
 	}
 	
