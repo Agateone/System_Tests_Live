@@ -1,15 +1,12 @@
 package Stepdef;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import java.io.File;
+
 import java.io.IOException;
 import java.text.DecimalFormat;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import org.apache.commons.io.FileUtils;
+
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -81,18 +78,11 @@ public class Reaction_Login_first_use_notice {
 	  	JavascriptExecutor js = (JavascriptExecutor)driver_Reaction_Login_first_use_notice;
 	  	js.executeScript("window.scrollBy(0,500)");    
 	
-	//Screenshot 1 of reaction first use notice
-		File scrFile = ((TakesScreenshot)driver_Reaction_Login_first_use_notice).getScreenshotAs(OutputType.FILE);
-		String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/reaction/"+"_"+timestamp+"_"+"jpg" ));	
 	
 	//scroll for full article
 		js.executeScript("window.scrollBy(0,500)");
 	
-	//Screenshot 2 of reaction first use notice
-		File scrFile1 = ((TakesScreenshot)driver_Reaction_Login_first_use_notice).getScreenshotAs(OutputType.FILE);
-		String timestamp1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		FileUtils.copyFile(scrFile1, new File("/Users/jay/Desktop/reaction/"+"_"+timestamp1+"_"+"jpg" ));		
+	
 	}
 
 	
@@ -116,12 +106,7 @@ public class Reaction_Login_first_use_notice {
 	@Then("I verify that the Login Button Navigates me to the login page to log me in to reaction")
 	public void i_verify_that_the_Login_Button_Navigates_me_to_the_login_page_to_log_me_in_to_reaction() throws IOException, InterruptedException {
 		
-	//get screen shot of the login page	
-		Thread.sleep(8000);
-		System.out.println("Popbitch staging is ready to be tested");
-		File scrFile = ((TakesScreenshot)driver_Reaction_Login_first_use_notice).getScreenshotAs(OutputType.FILE);
-		String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/reaction/"+"_"+timestamp+"_"+"jpg" ));
+
 		Thread.sleep(2000);
 		
 	//get current url of login page
@@ -150,10 +135,7 @@ public class Reaction_Login_first_use_notice {
 		Thread.sleep(2000);
 		Login_Pop_First_Use.Login_Process("Ajjukanna1$$");
 		Thread.sleep(2000);
-	//Screenshot 1 of login details from reaction fun
-		File scrFile1 = ((TakesScreenshot)driver_Reaction_Login_first_use_notice).getScreenshotAs(OutputType.FILE);
-		String timestamp1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		FileUtils.copyFile(scrFile1, new File("/Users/jay/Desktop/reaction/"+"_"+timestamp1+"_"+"jpg" ));	
+	
 	}
 
 	//Verify that I am being navigated to fulla rticle
@@ -235,25 +217,12 @@ public class Reaction_Login_first_use_notice {
 		}		
 		
 						
-	//String screenshot_name_3= "Popbitch_full_article_appears";
-		String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_3 = ((TakesScreenshot)driver_Reaction_Login_first_use_notice).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/reaction/"+"_"+timestamp_3+"_"+"jpg" ));
+	
 		Thread.sleep(3000);
 		JavascriptExecutor js = (JavascriptExecutor)driver_Reaction_Login_first_use_notice;
 		js.executeScript("window.scrollBy(0,500)");
 						
-	//String screenshot_name_4= "Popbitch_full_article_appears_2";
-		String timestamp_4 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-						File scrFile_4 = ((TakesScreenshot)driver_Reaction_Login_first_use_notice).getScreenshotAs(OutputType.FILE);		
-						FileUtils.copyFile(scrFile_4, new File("/Users/jay/Desktop/reaction/"+"_"+timestamp_4+"_"+"jpg" ));		
-						Thread.sleep(3000);		
-						JavascriptExecutor js1 = (JavascriptExecutor)driver_Reaction_Login_first_use_notice;
-						js1.executeScript("window.scrollBy(0,500)");		
-						String timestamp_5 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-						File scrFile_5 = ((TakesScreenshot)driver_Reaction_Login_first_use_notice).getScreenshotAs(OutputType.FILE);		
-						FileUtils.copyFile(scrFile_5, new File("/Users/jay/Desktop/reaction/"+"_"+timestamp_5+"_"+"jpg" ));
-						Thread.sleep(1000);
+	
 						
 					//Verify the user landed on the same article
 						String Login_From_PopBitch_Frist_Use_Notice_Current_Url1= driver_Reaction_Login_first_use_notice.getCurrentUrl();	   

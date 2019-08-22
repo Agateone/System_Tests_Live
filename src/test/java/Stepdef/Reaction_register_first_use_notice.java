@@ -131,11 +131,7 @@ public class Reaction_register_first_use_notice {
 	    System.out.println("\n"+"details entered successfully"+"\n");
 	    System.out.println("\n"+"Successfully navigated to full article"+"\n");
 	    
-	  //Screen shot of finish notice
-	  		String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-	  		File scrFile = ((TakesScreenshot)driver_Register_from_reaction_first_use_notice).getScreenshotAs(OutputType.FILE);		
-	  		FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/reaction/"+"_"+timestamp+"_"+"jpg" ));
-	  	
+	 
 	  //Verify that the finish notice appears
 	  		Popbitch_Finish_Notice_elements pop_finish = new Popbitch_Finish_Notice_elements(driver_Register_from_reaction_first_use_notice);
 	  		Boolean finish_notice_pop = pop_finish.Verify_finish_notice_appears();
@@ -189,11 +185,7 @@ public class Reaction_register_first_use_notice {
 	  		pop_finish.popbitch_click_on_authy_and_ok();
 	  		double balance_after = 2.00;
 	  		
-	  		//Screen shot of authorise charge notice
-			String timestamp_2 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-			File scrFile_2 = ((TakesScreenshot)driver_Register_from_reaction_first_use_notice).getScreenshotAs(OutputType.FILE);		
-			FileUtils.copyFile(scrFile_2, new File("/Users/jay/Desktop/reaction/"+"_"+timestamp_2+"_"+"jpg" ));
-		
+	  		
 		
 			
 			//scroll for full article
@@ -217,11 +209,7 @@ public class Reaction_register_first_use_notice {
 			
 			
 			
-		//Screen shot of article 1
-			String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-			File scrFile_3 = ((TakesScreenshot)driver_Register_from_reaction_first_use_notice).getScreenshotAs(OutputType.FILE);		
-			FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/reaction/"+"_"+timestamp_3+"_"+"jpg" ));
-			Thread.sleep(3000);
+		
 			
 		//check if the wallet is being deducted by 25 p after the first transaction
 		//first get the current balance
@@ -254,10 +242,7 @@ public class Reaction_register_first_use_notice {
 			JavascriptExecutor js = (JavascriptExecutor)driver_Register_from_reaction_first_use_notice;
 			js.executeScript("window.scrollBy(0,500)");
 		
-		//Screen shot of article 2
-			String timestamp_4 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-			File scrFile_4 = ((TakesScreenshot)driver_Register_from_reaction_first_use_notice).getScreenshotAs(OutputType.FILE);		
-			FileUtils.copyFile(scrFile_4, new File("/Users/jay/Desktop/reaction/"+"_"+timestamp_4+"_"+"jpg" ));
+		
 			JavascriptExecutor js1 = (JavascriptExecutor)driver_Register_from_reaction_first_use_notice;
 			js1.executeScript("window.scrollBy(0,500)");
 		
@@ -265,10 +250,6 @@ public class Reaction_register_first_use_notice {
 		//scroll for full article
 			js.executeScript("window.scrollBy(0,500)");
 			
-		//Screen shot of article 3		
-			String timestamp_5 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-			File scrFile_5 = ((TakesScreenshot)driver_Register_from_reaction_first_use_notice).getScreenshotAs(OutputType.FILE);		
-			FileUtils.copyFile(scrFile_5, new File("/Users/jay/Desktop/reaction/"+"_"+timestamp_5+"_"+"jpg" ));
 		
 		
 		
