@@ -6,37 +6,12 @@
     <classes>
       <class name="Stepdef.popbitch_transaction">
         <methods>
-          <include name="i_am_a_registered_Agate_User_and_I_login_in_to_popbitch_staging_with_username_as_and_password_as" invocation-numbers="0"/>
           <include name="Cornwall_wallet_balance_is_updated_and_free_point_remains_uneffected"/>
-          <include name="the_wallet_balance_and_free_point_are_deducted_by_p"/>
           <include name="reactions_wallet_balance_is_updated_and_free_point_remains_uneffected"/>
           <include name="slough_wallet_balance_remains_and_is_uneffected_by_popbitch"/>
           <include name="cricketer_wallet_balance_remains_and_is_uneffected"/>
-          <include name="i_read_a_premium_article"/>
         </methods>
       </class> <!-- Stepdef.popbitch_transaction -->
-      <class name="Stepdef.Popbitch_login_First_Use_Notice">
-        <methods>
-          <include name="i_Login_with_correct_Details"/>
-          <include name="i_verify_that_I_am_navigated_to_the_full_article"/>
-          <include name="i_verify_that_the_Login_Button_Navigates_me_to_the_login_page"/>
-          <include name="i_am_a_registered_user_I_open_the_browser" invocation-numbers="0"/>
-          <include name="i_Click_on_Login_to_Agate_from_the_Pop_Bitch_First_use_notice"/>
-          <include name="i_navigate_to_popbitch_com"/>
-        </methods>
-      </class> <!-- Stepdef.Popbitch_login_First_Use_Notice -->
-      <class name="Stepdef.Popbitch_register_First_Use_notice">
-        <methods>
-          <include name="finish_notice_elements_are_displayed"/>
-          <include name="i_login_successfully"/>
-          <include name="i_click_on_the_create_agate_wallet_from_the_first_use_notice"/>
-          <include name="i_verify_that_the_create_wallet_button_navigates_me_to_the_sign_up_page"/>
-          <include name="finish_Notice_appears"/>
-          <include name="i_enter_the_correct_details_and_hit_the_Register_button"/>
-          <include name="i_am_not_a_user_of_Agate_I_open_a_browser" invocation-numbers="0"/>
-          <include name="i_navigate_to_popbitch_com_from_the_browser"/>
-        </methods>
-      </class> <!-- Stepdef.Popbitch_register_First_Use_notice -->
     </classes>
   </test> <!-- Chrome(failed) -->
 </suite> <!-- Failed suite [ Popbitch Chrome] -->

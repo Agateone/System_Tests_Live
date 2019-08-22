@@ -132,7 +132,7 @@ Thread.sleep(1000);
 		
 		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/button[1]/div")).click();
 		Thread.sleep(2000);
-		driver_Register_Page_Elements.findElement(By.id("voucher_code")).sendKeys("jay1111");
+		driver_Register_Page_Elements.findElement(By.id("voucher_code")).sendKeys("jay1234567");
 		Thread.sleep(1000);
 		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/button[1]/div/span")).click();
 		Thread.sleep(3000);
@@ -226,24 +226,10 @@ Thread.sleep(1000);
 	{
 		
 	
-		//Screenshot
-		//String screenshot_name_1= "Registration_step1_2";
-		String timestamp_1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_1 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile_1, new File("/Users/jay/Desktop/cricketer/" +"_"+timestamp_1+"_"+"jpg" ));
-		
-		
 Thread.sleep(1000);
 		
 		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
 		Thread.sleep(10000);
-		
-		//Screenshot
-		//String screenshot_name_2= "Registration_step1_2";
-		String timestamp_2 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_2 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_2, new File("/Users/jay/Desktop/cricketer/"+"_"+timestamp_2+"_"+"jpg" ));
-		
 		
 		
 		
@@ -278,12 +264,6 @@ Thread.sleep(1000);
 		//driver_Register_Page_Elements.switchTo().defaultContent();
 		
 		
-		
-		//Screenshot
-		//String screenshot_name_3= "Registration_step1_2";
-		String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_3 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/cricketer/" +"_"+timestamp_3+"_"+"jpg" ));
 		
 		
 		
@@ -294,23 +274,11 @@ Thread.sleep(1000);
 	{
 		
 	
-		//Screenshot
-		//String screenshot_name_1= "Registration_step1_2";
-		String timestamp_1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_1 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile_1, new File("/Users/jay/Desktop/cornwall/" +"_"+timestamp_1+"_"+"jpg" ));
-		
 		
 Thread.sleep(1000);
 		
 		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
 		Thread.sleep(10000);
-		
-		//Screenshot
-		//String screenshot_name_2= "Registration_step1_2";
-		String timestamp_2 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_2 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_2, new File("/Users/jay/Desktop/cornwall/"+"_"+timestamp_2+"_"+"jpg" ));
 		
 		
 		
@@ -345,13 +313,6 @@ Thread.sleep(1000);
 		//Thread.sleep(400);
 		//driver_Register_Page_Elements.switchTo().defaultContent();
 		
-		
-		
-		//Screenshot
-		//String screenshot_name_3= "Registration_step1_2";
-		String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_3 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/cornwall/" +"_"+timestamp_3+"_"+"jpg" ));
 		
 		
 		
@@ -361,24 +322,11 @@ Thread.sleep(1000);
 	{
 		
 	
-		//Screenshot
-		//String screenshot_name_1= "Registration_step1_2";
-		String timestamp_1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_1 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile_1, new File("/Users/jay/Desktop/maidenhead/" +"_"+timestamp_1+"_"+"jpg" ));
-		
 		
 Thread.sleep(1000);
 		
 		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
 		Thread.sleep(10000);
-		
-		//Screenshot
-		//String screenshot_name_2= "Registration_step1_2";
-		String timestamp_2 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_2 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_2, new File("/Users/jay/Desktop/maidenhead/"+"_"+timestamp_2+"_"+"jpg" ));
-		
 		
 		
 		
@@ -414,12 +362,7 @@ Thread.sleep(1000);
 		
 		
 		
-		//Screenshot
-		//String screenshot_name_3= "Registration_step1_2";
-		String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_3 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/maidenhead/" +"_"+timestamp_3+"_"+"jpg" ));
-		
+	
 		
 		
 	}	
@@ -429,24 +372,10 @@ Thread.sleep(1000);
 	{
 		
 	
-		//Screenshot
-		//String screenshot_name_1= "Registration_step1_2";
-		String timestamp_1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_1 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile_1, new File("/Users/jay/Desktop/maidenhead/" +"_"+timestamp_1+"_"+"jpg" ));
-		
-		
 Thread.sleep(1000);
 		
 		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
 		Thread.sleep(10000);
-		
-		//Screenshot
-		//String screenshot_name_2= "Registration_step1_2";
-		String timestamp_2 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_2 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_2, new File("/Users/jay/Desktop/maidenhead/"+"_"+timestamp_2+"_"+"jpg" ));
-		
 		
 		
 		
@@ -482,11 +411,6 @@ Thread.sleep(1000);
 		
 		
 		
-		//Screenshot
-		//String screenshot_name_3= "Registration_step1_2";
-		String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_3 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/maidenhead/" +"_"+timestamp_3+"_"+"jpg" ));
 		
 		
 		
@@ -496,23 +420,12 @@ Thread.sleep(1000);
 	{
 		
 	
-		//Screenshot
-		//String screenshot_name_1= "Registration_step1_2";
-		String timestamp_1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_1 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile_1, new File("/Users/jay/Desktop/windsor/" +"_"+timestamp_1+"_"+"jpg" ));
-		
 		
 Thread.sleep(1000);
 		
 		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
 		Thread.sleep(10000);
 		
-		//Screenshot
-		//String screenshot_name_2= "Registration_step1_2";
-		String timestamp_2 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_2 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_2, new File("/Users/jay/Desktop/windsor/"+"_"+timestamp_2+"_"+"jpg" ));
 		
 		
 		
@@ -549,11 +462,6 @@ Thread.sleep(1000);
 		
 		
 		
-		//Screenshot
-		//String screenshot_name_3= "Registration_step1_2";
-		String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_3 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/windsor/" +"_"+timestamp_3+"_"+"jpg" ));
 		
 		
 		
@@ -564,23 +472,12 @@ Thread.sleep(1000);
 	{
 		
 	
-		//Screenshot
-		//String screenshot_name_1= "Registration_step1_2";
-		String timestamp_1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_1 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile_1, new File("/Users/jay/Desktop/newbury/" +"_"+timestamp_1+"_"+"jpg" ));
 		
 		
 Thread.sleep(1000);
 		
 		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
 		Thread.sleep(10000);
-		
-		//Screenshot
-		//String screenshot_name_2= "Registration_step1_2";
-		String timestamp_2 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_2 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_2, new File("/Users/jay/Desktop/newbury/"+"_"+timestamp_2+"_"+"jpg" ));
 		
 		
 		
@@ -616,12 +513,6 @@ Thread.sleep(1000);
 		//driver_Register_Page_Elements.switchTo().defaultContent();
 		
 		
-		
-		//Screenshot
-		//String screenshot_name_3= "Registration_step1_2";
-		String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_3 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/newbury/" +"_"+timestamp_3+"_"+"jpg" ));
 		
 		
 		
@@ -630,25 +521,12 @@ Thread.sleep(1000);
 	
 	if(url.contains("roanoke-chowannewsherald"))
 	{
-		
 	
-		//Screenshot
-		//String screenshot_name_1= "Registration_step1_2";
-		String timestamp_1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_1 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile_1, new File("/Users/jay/Desktop/boone/" +"_"+timestamp_1+"_"+"jpg" ));
-		
 		
 Thread.sleep(1000);
 		
 		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
 		Thread.sleep(10000);
-		
-		//Screenshot
-		//String screenshot_name_2= "Registration_step1_2";
-		String timestamp_2 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_2 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_2, new File("/Users/jay/Desktop/boone/"+"_"+timestamp_2+"_"+"jpg" ));
 		
 		
 		
@@ -683,13 +561,6 @@ Thread.sleep(1000);
 		//Thread.sleep(400);
 		//driver_Register_Page_Elements.switchTo().defaultContent();
 		
-		
-		
-		//Screenshot
-		//String screenshot_name_3= "Registration_step1_2";
-		String timestamp_3 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_3 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/boone/" +"_"+timestamp_3+"_"+"jpg" ));
 		
 		
 		
@@ -701,12 +572,6 @@ Thread.sleep(1000);
 	{
 		
 	
-		//Screenshot
-		//String screenshot_name_1= "Registration_step1_2";
-		String timestamp_1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_1 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile_1, new File("/Users/jay/Desktop/scifi/" +"_"+timestamp_1+"_"+"jpg" ));
-		
 		
 Thread.sleep(1000);
 		
