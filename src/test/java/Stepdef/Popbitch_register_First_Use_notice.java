@@ -3,9 +3,7 @@ package Stepdef;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-
 import org.openqa.selenium.JavascriptExecutor;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -80,7 +78,7 @@ public class Popbitch_register_First_Use_notice {
 	@Then("^I verify that the create wallet button navigates me to the sign up page$")
 	@Test(priority=3)
 	public void i_verify_that_the_create_wallet_button_navigates_me_to_the_sign_up_page() throws Throwable {			
-		//screenshot of reg page
+		
 		Thread.sleep(8000);
 		
 		

@@ -317,7 +317,7 @@ public class popbitch_transaction {
 		
 		
 			//click ok on New pub notice charge notice
-			Thread.sleep(10000);
+			Thread.sleep(3000);
 			New_Pub_Notice New_pub = new New_Pub_Notice(driver_transaction_staging_popbitch);
 			New_pub.Newpub_charge_off();
 			Thread.sleep(3000);
@@ -325,7 +325,7 @@ public class popbitch_transaction {
 			
 			
 	//click ok on Authorise charge notice
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 			Authorise_charge_notice_popbitch authy2 = new Authorise_charge_notice_popbitch(driver_transaction_staging_popbitch);
 			authy2.authorise_charge_notice_click_continue();
 			Thread.sleep(3000);
@@ -419,7 +419,7 @@ public class popbitch_transaction {
 					
 			
 					//click ok on New pub notice charge notice
-					Thread.sleep(10000);
+					Thread.sleep(3000);
 					New_Pub_Notice New_pub = new New_Pub_Notice(driver_transaction_staging_popbitch);
 					New_pub.Newpub_charge_off();
 					Thread.sleep(3000);
@@ -427,7 +427,7 @@ public class popbitch_transaction {
 					
 					
 			//click ok on Authorise charge notice
-					Thread.sleep(5000);
+					Thread.sleep(3000);
 					Authorise_charge_notice_popbitch authy2 = new Authorise_charge_notice_popbitch(driver_transaction_staging_popbitch);
 					authy2.authorise_charge_notice_click_continue();
 					Thread.sleep(3000);
@@ -518,7 +518,7 @@ public class popbitch_transaction {
 					
 			
 					//click ok on New pub notice charge notice
-					Thread.sleep(10000);
+					Thread.sleep(3000);
 					New_Pub_Notice New_pub = new New_Pub_Notice(driver_transaction_staging_popbitch);
 					New_pub.Newpub_charge_off();
 					Thread.sleep(3000);

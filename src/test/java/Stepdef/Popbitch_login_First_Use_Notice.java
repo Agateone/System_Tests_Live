@@ -165,7 +165,7 @@ public class Popbitch_login_First_Use_Notice {
 		JavascriptExecutor js = (JavascriptExecutor)driver_Login_From_PopBitch_Frist_Use_Notice;
 		js.executeScript("window.scrollBy(0,500)");
 		
-	//String screenshot_name_4= "Popbitch_full_article_appears_2";
+	
 		
 		Thread.sleep(3000);		
 		JavascriptExecutor js1 = (JavascriptExecutor)driver_Login_From_PopBitch_Frist_Use_Notice;

@@ -1,4 +1,4 @@
-package Stepdef;
+ package Stepdef;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -42,7 +42,7 @@ public class Top_up_from_wallet_staging_popbitch {
 		driverTop_up_from_wallet_staging_popbitch.get("http://popbitch.agate.one");
 		//delay
 		Thread.sleep(1000);
-		//maximise window
+
 		//driverTop_up_from_wallet_staging_popbitch.manage().window().maximize();
 		//calling the first use elements to perform operations on the elements
 		PopbitchFirstUseNoticeElements pop_first_use_top_up_from_wallet1 = new PopbitchFirstUseNoticeElements(driverTop_up_from_wallet_staging_popbitch);

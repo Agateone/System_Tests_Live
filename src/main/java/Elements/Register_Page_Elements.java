@@ -31,7 +31,7 @@ public class Register_Page_Elements {
 	By Register_Page_Confirm_Password= By.id("password_confirmation");																									//confirm password textbox
 	By Register_Page_topup_3= By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div/form/section[1]/div/div[2]/label[1]");
 	By Register_Page_topup_5= By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div/form/section[1]/div/div[2]/label[2]");											//top up 5 button
-	By Register_Page_topup_8= By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div/form/section[1]/div/div[2]/label[3]");											//top up 5 button
+	By Register_Page_topup_1= By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/section[1]/div/div[2]/label[1]");											//top up 5 button
 	By Register_Page_pay_by_card=By.className("braintree-option__label");	//card payment button
 	By Register_Page_Card_Number= By.name("credit-card-number");			//card number text box
 	By Register_Page_Card_Expiry_Date= By.id("expiration");																											//card expiration date textbox
@@ -629,6 +629,68 @@ Thread.sleep(1000);
 		
 	}	
 	
+	if(url.contains("examinerlive"))
+	{	
+		
+		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
+		Thread.sleep(10000);
+		
+		driver_Register_Page_Elements.findElement(Register_Page_topup_1).click();
+		Thread.sleep(2000);
+		driver_Register_Page_Elements.findElement(Register_Page_pay_by_card).click();
+		System.out.println("\n"+"clciked on credit card"+"\n");
+		Thread.sleep(5000);
+			
+		//driver_Register_Page_Elements.findElement(Register_Page_topup_3).click();
+		//Thread.sleep(2000);
+		//driver_Register_Page_Elements.findElement(Register_Page_pay_by_card).click();
+		//System.out.println("\n"+"clciked on credit card"+"\n");
+		//Thread.sleep(5000);		
+		//driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/button[1]/div")).click();
+		//Thread.sleep(2000);
+		//driver_Register_Page_Elements.findElement(By.id("voucher_code")).sendKeys("jay1111");
+		//Thread.sleep(1000);
+		//driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/button[1]/div/span")).click();
+		//Thread.sleep(3000);
+		//driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/section[1]/div/div[2]/label[1]")).click();
+		//Thread.sleep(1000);		
+		//driver_Register_Page_Elements.switchTo().frame("braintree-hosted-field-number");
+		//driver_Register_Page_Elements.findElement(Register_Page_Card_Number).sendKeys("4111111111111111");
+		//Thread.sleep(400);
+		//driver_Register_Page_Elements.switchTo().defaultContent();
+		//driver_Register_Page_Elements.switchTo().frame("braintree-hosted-field-expirationDate");
+		//driver_Register_Page_Elements.findElement(Register_Page_Card_Expiry_Date).sendKeys("0319");
+		//Thread.sleep(400);
+		//driver_Register_Page_Elements.switchTo().defaultContent();		
+		//Screenshot
+		//String screenshot_name_3= "Registration_step1_2";
+		
+driver_Register_Page_Elements.switchTo().frame("braintree-hosted-field-number");
+		
+		driver_Register_Page_Elements.findElement(Register_Page_Card_Number).sendKeys("4751290228503710");
+		Thread.sleep(400);
+		driver_Register_Page_Elements.switchTo().defaultContent();
+		driver_Register_Page_Elements.switchTo().frame("braintree-hosted-field-expirationDate");
+		driver_Register_Page_Elements.findElement(Register_Page_Card_Expiry_Date).sendKeys("0223");
+		driver_Register_Page_Elements.switchTo().defaultContent();
+		Thread.sleep(400);
+		
+		driver_Register_Page_Elements.switchTo().frame("braintree-hosted-field-cvv");
+		
+		driver_Register_Page_Elements.findElement(By.id("cvv")).sendKeys("986");
+		driver_Register_Page_Elements.switchTo().defaultContent();
+		Thread.sleep(400);
+		
+		driver_Register_Page_Elements.switchTo().frame("braintree-hosted-field-postalCode");
+		
+		driver_Register_Page_Elements.findElement(By.id("postal-code")).sendKeys("Hp22 7BH");
+		
+		driver_Register_Page_Elements.switchTo().defaultContent();
+		
+		
+		
+	}	
+	
 	
 	if(url.contains("grantham"))
 	{	
@@ -852,6 +914,7 @@ Thread.sleep(1000);
 		FileUtils.copyFile(scrFile_3, new File("/Users/jay/Desktop/newark/" +"_"+timestamp_3+"_"+"jpg" ));
 		
 	}	
+	Thread.sleep(10000);
 		driver_Register_Page_Elements.findElement(Register_page_2_Continue).click();
 		
 		System.out.println("\n"+"Registered with the email "+ randomEmail +"\n");
