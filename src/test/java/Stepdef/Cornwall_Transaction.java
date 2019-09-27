@@ -135,7 +135,7 @@ public class Cornwall_Transaction {
 			//convert string balances to double
 				double actual_balance_after_reacding_first_article = Double.parseDouble(Balance_after_reading_an_article);
 				double expected_balance_to_be_deducted = 0.20;
-				double balance_after_first_article= 1.60;
+				double balance_after_first_article= 9.60;
 				double actual_balance_being_deducted= balance_after_first_article-actual_balance_after_reacding_first_article;
 				DecimalFormat df = new DecimalFormat("#.##");
 				actual_balance_being_deducted = Double.valueOf(df.format(actual_balance_being_deducted));						
@@ -212,7 +212,7 @@ public class Cornwall_Transaction {
 			//convert string balances to double
 				double actual_balance_after_reacding_first_article = Double.parseDouble(Balance_after_reading_an_article);
 				double expected_balance_to_be_deducted = 0.20;
-				double balance_after_first_article= 1.40;
+				double balance_after_first_article= 9.40;
 				double actual_balance_being_deducted= balance_after_first_article-actual_balance_after_reacding_first_article;
 				DecimalFormat df = new DecimalFormat("#.##");
 				actual_balance_being_deducted = Double.valueOf(df.format(actual_balance_being_deducted));						
@@ -282,7 +282,7 @@ public class Cornwall_Transaction {
 					//convert string balances to double
 						double actual_balance_after_reacding_first_article1 = Double.parseDouble(Balance_after_reading_an_article1);
 						double expected_balance_to_be_deducted1 = 0.20;
-						double balance_after_first_article1= 1.20;
+						double balance_after_first_article1= 9.20;
 						double actual_balance_being_deducted1= balance_after_first_article1-actual_balance_after_reacding_first_article1;
 						DecimalFormat df1 = new DecimalFormat("#.##");
 						actual_balance_being_deducted1 = Double.valueOf(df1.format(actual_balance_being_deducted1));						
@@ -351,7 +351,7 @@ public class Cornwall_Transaction {
 			Thread.sleep(1000);
 		//convert string balances to double
 			double balance_after = Double.parseDouble(Balance_after_reading_an_article);
-			expected_balance = 1.00;
+			expected_balance = 9.00;
 		//verify whether the expected balance is the actual balance
 			AssertJUnit.assertEquals(expected_balance, balance_after);
 			if(balance_after==expected_balance)
@@ -411,7 +411,7 @@ public class Cornwall_Transaction {
 			Thread.sleep(1000);
 		//convert string balances to double
 			double balance_after = Double.parseDouble(Balance_after_reading_an_article);
-			expected_balance = 1.00;
+			expected_balance = 9.00;
 		//verify whether the expected balance is the actual balance
 			AssertJUnit.assertEquals(expected_balance, balance_after);
 			if(balance_after==expected_balance)
@@ -475,7 +475,7 @@ public class Cornwall_Transaction {
 			Thread.sleep(1000);
 		//convert string balances to double
 			double balance_after = Double.parseDouble(Balance_after_reading_an_article);
-			expected_balance = 1.00;
+			expected_balance = 9.00;
 		//verify whether the expected balance is the actual balance
 			AssertJUnit.assertEquals(expected_balance, balance_after);
 			if(balance_after==expected_balance)

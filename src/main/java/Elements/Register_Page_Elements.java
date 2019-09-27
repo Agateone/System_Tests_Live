@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.UUID;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -128,6 +127,25 @@ Thread.sleep(1000);
 		Thread.sleep(5000);
 		
 		
+		boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+		
+		boolean expected_one_pound = false;
+		
+		if(one_pound_top_up==expected_one_pound)
+		{
+			
+			System.out.println("No one pound top up active on reaction ");
+			
+		}
+		else
+		{
+			System.out.println("1£ top up active on reaction :::: java programm has stopped!!!, Please fix it ");
+		       System.exit(1);
+			
+		}
+		
+		
+		
 		
 		
 		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/button[1]/div")).click();
@@ -179,6 +197,22 @@ Thread.sleep(1000);
 		Thread.sleep(10000);
 		
 		
+boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+		
+		boolean expected_one_pound = false;
+		
+		if(one_pound_top_up==expected_one_pound)
+		{
+			
+			System.out.println("No one pound top up active on popbitch ");
+			
+		}
+		else
+		{
+			System.out.println("1£ top up active on popbitch :::: java programm has stopped!!!, Please fix it ");
+		       System.exit(1);
+			
+		}
 		
 		
 		
@@ -232,6 +266,25 @@ Thread.sleep(1000);
 		Thread.sleep(10000);
 		
 		
+boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+		
+		boolean expected_one_pound = false;
+		
+		if(one_pound_top_up==expected_one_pound)
+		{
+			
+			System.out.println("No one pound top up active on cricketer ");
+			
+		}
+		else
+		{
+			System.out.println("1£ top up active on cricketer :::: java programm has stopped!!!, Please fix it ");
+		       System.exit(1);
+			
+		}
+		
+		
+		
 		
 		//driver_Register_Page_Elements.findElement(Register_Page_topup_3).click();
 		//Thread.sleep(2000);
@@ -280,6 +333,23 @@ Thread.sleep(1000);
 		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
 		Thread.sleep(10000);
 		
+		boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+		
+		boolean expected_one_pound = false;
+		
+		if(one_pound_top_up==expected_one_pound)
+		{
+			
+			System.out.println("1£ top up is not active on cornwall :::: java programm has stopped!!!, Please fix it ");
+		       System.exit(1);
+			
+		}
+		else
+		{
+			System.out.println("one pound top up active on cornwall ");
+			
+			
+		}
 		
 		
 		
@@ -294,7 +364,7 @@ Thread.sleep(1000);
 		
 		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/button[1]/div")).click();
 		Thread.sleep(2000);
-		driver_Register_Page_Elements.findElement(By.id("voucher_code")).sendKeys("JAY1234567");
+		driver_Register_Page_Elements.findElement(By.id("voucher_code")).sendKeys("JAY1111");
 		Thread.sleep(1000);
 		driver_Register_Page_Elements.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div/div[2]/div[2]/div[1]/form/button[1]/div/span")).click();
 		Thread.sleep(3000);
@@ -328,7 +398,23 @@ Thread.sleep(1000);
 		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
 		Thread.sleep(10000);
 		
+boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
 		
+		boolean expected_one_pound = false;
+		
+		if(one_pound_top_up==expected_one_pound)
+		{
+			
+			System.out.println("1£ top up is not active on cornwall :::: java programm has stopped!!!, Please fix it ");
+		       System.exit(1);
+			
+		}
+		else
+		{
+			System.out.println("one pound top up active on cornwall ");
+			
+			
+		}
 		
 		//driver_Register_Page_Elements.findElement(Register_Page_topup_3).click();
 		//Thread.sleep(2000);
@@ -377,7 +463,23 @@ Thread.sleep(1000);
 		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
 		Thread.sleep(10000);
 		
+boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
 		
+		boolean expected_one_pound = false;
+		
+		if(one_pound_top_up==expected_one_pound)
+		{
+			
+			System.out.println("1£ top up is not active on cornwall :::: java programm has stopped!!!, Please fix it ");
+		       System.exit(1);
+			
+		}
+		else
+		{
+			System.out.println("one pound top up active on cornwall ");
+			
+			
+		}
 		
 		//driver_Register_Page_Elements.findElement(Register_Page_topup_3).click();
 		//Thread.sleep(2000);
@@ -427,7 +529,23 @@ Thread.sleep(1000);
 		Thread.sleep(10000);
 		
 		
+boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
 		
+		boolean expected_one_pound = false;
+		
+		if(one_pound_top_up==expected_one_pound)
+		{
+			
+			System.out.println("1£ top up is not active on cornwall :::: java programm has stopped!!!, Please fix it ");
+		       System.exit(1);
+			
+		}
+		else
+		{
+			System.out.println("one pound top up active on cornwall ");
+			
+			
+		}
 		
 		
 		//driver_Register_Page_Elements.findElement(Register_Page_topup_3).click();
@@ -480,7 +598,23 @@ Thread.sleep(1000);
 		Thread.sleep(10000);
 		
 		
+boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
 		
+		boolean expected_one_pound = false;
+		
+		if(one_pound_top_up==expected_one_pound)
+		{
+			
+			System.out.println("1£ top up is not active on newbury :::: java programm has stopped!!!, Please fix it ");
+		       System.exit(1);
+			
+		}
+		else
+		{
+			System.out.println("one pound top up active on newbury ");
+			
+			
+		}
 		
 		//driver_Register_Page_Elements.findElement(Register_Page_topup_3).click();
 		//Thread.sleep(2000);
@@ -635,6 +769,25 @@ Thread.sleep(1000);
 		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
 		Thread.sleep(10000);
 		
+		
+boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+		
+		boolean expected_one_pound = false;
+		
+		if(one_pound_top_up==expected_one_pound)
+		{
+			
+			System.out.println("1£ top up is not active on cornwall :::: java programm has stopped!!!, Please fix it ");
+		       System.exit(1);
+			
+		}
+		else
+		{
+			System.out.println("one pound top up active on cornwall ");
+			
+			
+		}
+		
 		driver_Register_Page_Elements.findElement(Register_Page_topup_1).click();
 		Thread.sleep(2000);
 		driver_Register_Page_Elements.findElement(Register_Page_pay_by_card).click();
@@ -694,19 +847,32 @@ driver_Register_Page_Elements.switchTo().frame("braintree-hosted-field-number");
 	
 	if(url.contains("grantham"))
 	{	
-		//Screenshot
-		//String screenshot_name_1= "Registration_step1_2";
-		String timestamp_1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_1 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile_1, new File("/Users/jay/Desktop/grantham/" +"_"+timestamp_1+"_"+"jpg" ));		
+		
+		
+		
+				
 Thread.sleep(1000);		
 		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
 		Thread.sleep(10000);
-		//Screenshot
-		//String screenshot_name_2= "Registration_step1_2";
-		String timestamp_2 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile_2 = ((TakesScreenshot)driver_Register_Page_Elements).getScreenshotAs(OutputType.FILE);		
-		FileUtils.copyFile(scrFile_2, new File("/Users/jay/Desktop/grantham/"+"_"+timestamp_2+"_"+"jpg" ));		
+		
+boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+		
+		boolean expected_one_pound = false;
+		
+		if(one_pound_top_up==expected_one_pound)
+		{
+			
+			System.out.println("1£ top up is not active on cornwall :::: java programm has stopped!!!, Please fix it ");
+		       System.exit(1);
+			
+		}
+		else
+		{
+			System.out.println("one pound top up active on cornwall ");
+			
+			
+		}
+		
 		//driver_Register_Page_Elements.findElement(Register_Page_topup_3).click();
 		//Thread.sleep(2000);
 		//driver_Register_Page_Elements.findElement(Register_Page_pay_by_card).click();
@@ -740,6 +906,25 @@ Thread.sleep(1000);
 	
 	if(url.contains("stamfordmercury"))
 	{	
+boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+		
+		boolean expected_one_pound = false;
+		
+		if(one_pound_top_up==expected_one_pound)
+		{
+			
+			System.out.println("1£ top up is not active on cornwall :::: java programm has stopped!!!, Please fix it ");
+		       System.exit(1);
+			
+		}
+		else
+		{
+			System.out.println("one pound top up active on cornwall ");
+			
+			
+		}
+		
+		
 		//Screenshot
 		//String screenshot_name_1= "Registration_step1_2";
 		String timestamp_1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
@@ -784,6 +969,26 @@ Thread.sleep(1000);
 	
 	if(url.contains("spaldingtoday"))
 	{	
+		
+boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+		
+		boolean expected_one_pound = false;
+		
+		if(one_pound_top_up==expected_one_pound)
+		{
+			
+			System.out.println("1£ top up is not active on cornwall :::: java programm has stopped!!!, Please fix it ");
+		       System.exit(1);
+			
+		}
+		else
+		{
+			System.out.println("one pound top up active on cornwall ");
+			
+			
+		}
+		
+		
 		//Screenshot
 		//String screenshot_name_1= "Registration_step1_2";
 		String timestamp_1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
@@ -828,6 +1033,26 @@ Thread.sleep(1000);
 	
 	if(url.contains("fenlandcitizen"))
 	{	
+		
+boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+		
+		boolean expected_one_pound = false;
+		
+		if(one_pound_top_up==expected_one_pound)
+		{
+			
+			System.out.println("1£ top up is not active on cornwall :::: java programm has stopped!!!, Please fix it ");
+		       System.exit(1);
+			
+		}
+		else
+		{
+			System.out.println("one pound top up active on cornwall ");
+			
+			
+		}
+		
+		
 		//Screenshot
 		//String screenshot_name_1= "Registration_step1_2";
 		String timestamp_1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
@@ -873,6 +1098,28 @@ Thread.sleep(1000);
 	
 	if(url.contains("newarkadvertiser"))
 	{	
+		
+boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+		
+		boolean expected_one_pound = false;
+		
+		if(one_pound_top_up==expected_one_pound)
+		{
+			
+			System.out.println("1£ top up is not active on cornwall :::: java programm has stopped!!!, Please fix it ");
+		       System.exit(1);
+			
+		}
+		else
+		{
+			System.out.println("one pound top up active on cornwall ");
+			
+			
+		}
+		
+		
+		
+		
 		//Screenshot
 		//String screenshot_name_1= "Registration_step1_2";
 		String timestamp_1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
@@ -929,6 +1176,9 @@ Thread.sleep(1000);
 
 	public void wait_untill_page_has_loaded() throws InterruptedException									//Click Register from login page
 	{
+		
+		
+		
 		Thread.sleep(12000);
 		WebElement email = driver_Register_Page_Elements.findElement(Register_Page_email);
 		Boolean email_displayed = email.isDisplayed();

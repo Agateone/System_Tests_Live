@@ -6,7 +6,7 @@
     <classes>
       <class name="Stepdef.popbitch_transaction">
         <methods>
-          <include name="slough_wallet_balance_remains_and_is_uneffected_by_popbitch"/>
+          <include name="reactions_wallet_balance_is_updated_and_free_point_remains_uneffected"/>
         </methods>
       </class> <!-- Stepdef.popbitch_transaction -->
     </classes>

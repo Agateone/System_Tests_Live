@@ -4,27 +4,14 @@
   <test thread-count="5" name="Chrome(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="Stepdef.Grantham_Login">
+      <class name="Stepdef.Cricketer_Transaction">
         <methods>
-          <include name="verify_that_I_am_being_navigated_to_the_same_article_on_grantham"/>
+          <include name="cornwall_wallet_balance_remains_and_is_uneffected_according_to_cricketer"/>
+          <include name="reaction_wallet_balance_is_updated_and_free_point_remains_uneffected"/>
+          <include name="the_wallet_balance_and_free_point_are_deducted_by_x_amount_on_cricketer_wallet"/>
+          <include name="the_popbitch_wallet_balance_is_updated_same_as_cricketer_and_free_point_remains_uneffected"/>
         </methods>
-      </class> <!-- Stepdef.Grantham_Login -->
-      <class name="Stepdef.Grantham_Transaction">
-        <methods>
-          <include name="cornwall_wallet_balance_remains_and_is_uneffected_by_grantham"/>
-          <include name="windsor_wallet_balance_remains_and_is_uneffected_by_grantham"/>
-          <include name="slough_wallet_balance_remains_and_is_uneffected_by_grantham"/>
-          <include name="i_read_a_premium_article_on_grantham"/>
-          <include name="cricketer_wallet_balance_remains_and_is_uneffected_by_grantham"/>
-          <include name="the_popbitch_wallet_balance_is_updated_same_as_grantham_and_free_point_remains_uneffected"/>
-          <include name="reaction_wallet_balance_is_updated_and_free_point_remains_uneffected_same_as_grantham"/>
-        </methods>
-      </class> <!-- Stepdef.Grantham_Transaction -->
-      <class name="Stepdef.Grantham_Register">
-        <methods>
-          <include name="i_am_registered_as_an_agate_user_on_grantham_successfully_and_I_am_shown_a_first_use_notice"/>
-        </methods>
-      </class> <!-- Stepdef.Grantham_Register -->
+      </class> <!-- Stepdef.Cricketer_Transaction -->
     </classes>
   </test> <!-- Chrome(failed) -->
 </suite> <!-- Failed suite [Chrome] -->

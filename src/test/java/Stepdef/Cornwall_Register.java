@@ -186,7 +186,7 @@ public class Cornwall_Register {
 	  		
 	  		//Click off on finish notice and click on ok
 	  		pop_finish.popbitch_click_on_authy_and_ok();
-	  		double balance_after = 2.00;
+	  		double balance_after = 10.00;
 	  		
 	  		//Screen shot of authorise charge notice
 			String timestamp_2 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
@@ -285,12 +285,7 @@ public class Cornwall_Register {
 			FileUtils.copyFile(scrFile_5, new File("/Users/jay/Desktop/api/"+"_"+timestamp_5+"_"+"jpg" ));
 	  		
 	  		
-	  		
-	  		
-	  		
-	  		
-	  		
-	  		
+			driver_Register_from_Cornwall_first_use_notice.quit();
 	  		
 	  		
 	  		

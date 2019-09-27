@@ -189,7 +189,7 @@ public class Cornwall_Login_from_FUN {
 	//convert string balances to double
 		double actual_balance_after_reacding_first_article = Double.parseDouble(Balance_after_reading_an_article);
 		double expected_balance_to_be_deducted = 0.20;
-		double balance_after_first_article= 1.80;
+		double balance_after_first_article= 9.80;
 		double actual_balance_being_deducted= balance_after_first_article-actual_balance_after_reacding_first_article;
 		DecimalFormat df = new DecimalFormat("#.##");
 		actual_balance_being_deducted = Double.valueOf(df.format(actual_balance_being_deducted));						
@@ -234,6 +234,8 @@ public class Cornwall_Login_from_FUN {
 					    AssertJUnit.assertEquals(Login_From_PopBitch_Frist_Use_Notice_Current_Url1, Login_From_PopBitch_Frist_Use_Notice_Popbitch_Login_Url1);
 					    System.out.println("\n"+"User presented with complete article"+"\n");
 					    Thread.sleep(3000);
+					    driver_Cornwall_Login_from_FUN.quit(); 
+					    
 					
 	}
 }
