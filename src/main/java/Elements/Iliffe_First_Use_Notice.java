@@ -64,10 +64,7 @@ public class Iliffe_First_Use_Notice {
 					
 					WebElement frame = 	driver_Iliffe_First_Use_Notice.findElement(By.xpath("//*[@id=\"iframe__inpage_notices\"]"));
 					driver_Iliffe_First_Use_Notice.switchTo().frame(frame);	
-					
-					
-					Boolean finding = driver_Iliffe_First_Use_Notice.findElement(By.xpath("//*[@id=\"btn_cta\"]")).isDisplayed();
-					System.out.println(finding);
+				
 					
 					WebElement section = 	driver_Iliffe_First_Use_Notice.findElement(By.id("agate_section"));
 					

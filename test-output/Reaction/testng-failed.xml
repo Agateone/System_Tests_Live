@@ -4,12 +4,30 @@
   <test thread-count="5" name="Reaction(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="Stepdef.Reaction_Login_first_use_notice">
+        <methods>
+          <include name="entering_the_correct_email_and_password_logs_me_in_to_reaction"/>
+          <include name="verify_that_I_am_being_navigated_to_the_same_article"/>
+          <include name="i_click_on_Login_from_reaction_First_use_notice"/>
+          <include name="i_verify_that_the_Login_Button_Navigates_me_to_the_login_page_to_log_me_in_to_reaction"/>
+        </methods>
+      </class> <!-- Stepdef.Reaction_Login_first_use_notice -->
       <class name="Stepdef.Reaction_Transaction">
         <methods>
           <include name="the_wallet_balance_and_free_point_are_deducted_by_x_amount_on_reaction_wallet"/>
           <include name="i_read_a_premium_article_on_reaction"/>
+          <include name="Cornwall_wallet_balance_remains_and_is_uneffected"/>
+          <include name="i_am_a_registered_Agate_User_and_I_login_in_to_Reaction" invocation-numbers="0"/>
+          <include name="cricketer_wallet_balance_is_updated_and_free_point_remains_uneffected"/>
+          <include name="the_popbitch_wallet_balance_is_updated_same_as_reaction_and_free_point_remains_uneffected"/>
         </methods>
       </class> <!-- Stepdef.Reaction_Transaction -->
+      <class name="Stepdef.Reaction_register_first_use_notice">
+        <methods>
+          <include name="i_click_on_the_create_wallet_button_of_reaction_first_use_notice"/>
+          <include name="i_verify_that_the_create_wallet_button_on_reaction_first_use_notice_takes_me_to_the_reg_page"/>
+        </methods>
+      </class> <!-- Stepdef.Reaction_register_first_use_notice -->
     </classes>
   </test> <!-- Reaction(failed) -->
 </suite> <!-- Failed suite [Reaction] -->

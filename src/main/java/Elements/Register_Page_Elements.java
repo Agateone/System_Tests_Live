@@ -127,12 +127,12 @@ Thread.sleep(1000);
 		Thread.sleep(5000);
 		
 		
-		boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+	//	boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
 		
-		boolean expected_one_pound = false;
+	//	boolean expected_one_pound = false;
 		
-		if(one_pound_top_up==expected_one_pound)
-		{
+	//	if(one_pound_top_up==expected_one_pound)
+	/*	{
 			
 			System.out.println("No one pound top up active on reaction ");
 			
@@ -142,7 +142,7 @@ Thread.sleep(1000);
 			System.out.println("1£ top up active on reaction :::: java programm has stopped!!!, Please fix it ");
 		       System.exit(1);
 			
-		}
+		}*/
 		
 		
 		
@@ -197,7 +197,7 @@ Thread.sleep(1000);
 		Thread.sleep(10000);
 		
 		
-boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+/*boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
 		
 		boolean expected_one_pound = false;
 		
@@ -212,7 +212,7 @@ boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Pa
 			System.out.println("1£ top up active on popbitch :::: java programm has stopped!!!, Please fix it ");
 		       System.exit(1);
 			
-		}
+		}*/
 		
 		
 		
@@ -266,7 +266,7 @@ Thread.sleep(1000);
 		Thread.sleep(10000);
 		
 		
-boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+/*boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
 		
 		boolean expected_one_pound = false;
 		
@@ -281,7 +281,7 @@ boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Pa
 			System.out.println("1£ top up active on cricketer :::: java programm has stopped!!!, Please fix it ");
 		       System.exit(1);
 			
-		}
+		}*/
 		
 		
 		
@@ -333,7 +333,7 @@ Thread.sleep(1000);
 		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
 		Thread.sleep(10000);
 		
-		boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+	/*	boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
 		
 		boolean expected_one_pound = false;
 		
@@ -349,7 +349,7 @@ Thread.sleep(1000);
 			System.out.println("one pound top up active on cornwall ");
 			
 			
-		}
+		}*/
 		
 		
 		
@@ -398,7 +398,7 @@ Thread.sleep(1000);
 		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
 		Thread.sleep(10000);
 		
-boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+/*boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
 		
 		boolean expected_one_pound = false;
 		
@@ -420,7 +420,7 @@ boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Pa
 		//Thread.sleep(2000);
 		//driver_Register_Page_Elements.findElement(Register_Page_pay_by_card).click();
 		//System.out.println("\n"+"clciked on credit card"+"\n");
-		Thread.sleep(5000);
+		Thread.sleep(5000);*/
 		
 		
 		
@@ -463,7 +463,7 @@ Thread.sleep(1000);
 		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
 		Thread.sleep(10000);
 		
-boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+/*boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
 		
 		boolean expected_one_pound = false;
 		
@@ -485,7 +485,7 @@ boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Pa
 		//Thread.sleep(2000);
 		//driver_Register_Page_Elements.findElement(Register_Page_pay_by_card).click();
 		//System.out.println("\n"+"clciked on credit card"+"\n");
-		Thread.sleep(5000);
+		Thread.sleep(5000);*/
 		
 		
 		
@@ -529,7 +529,7 @@ Thread.sleep(1000);
 		Thread.sleep(10000);
 		
 		
-boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+/*boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
 		
 		boolean expected_one_pound = false;
 		
@@ -552,7 +552,7 @@ boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Pa
 		//Thread.sleep(2000);
 		//driver_Register_Page_Elements.findElement(Register_Page_pay_by_card).click();
 		//System.out.println("\n"+"clciked on credit card"+"\n");
-		Thread.sleep(5000);
+		Thread.sleep(5000);*/
 		
 		
 		
@@ -592,7 +592,7 @@ boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Pa
 	
 		
 		
-Thread.sleep(1000);
+/*Thread.sleep(1000);
 		
 		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
 		Thread.sleep(10000);
@@ -620,7 +620,7 @@ boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Pa
 		//Thread.sleep(2000);
 		//driver_Register_Page_Elements.findElement(Register_Page_pay_by_card).click();
 		//System.out.println("\n"+"clciked on credit card"+"\n");
-		Thread.sleep(5000);
+		Thread.sleep(5000);*/
 		
 		
 		
@@ -770,7 +770,7 @@ Thread.sleep(1000);
 		Thread.sleep(10000);
 		
 		
-boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+/*boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
 		
 		boolean expected_one_pound = false;
 		
@@ -786,7 +786,7 @@ boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Pa
 			System.out.println("one pound top up active on cornwall ");
 			
 			
-		}
+		}*/
 		
 		driver_Register_Page_Elements.findElement(Register_Page_topup_1).click();
 		Thread.sleep(2000);
@@ -855,7 +855,7 @@ Thread.sleep(1000);
 		driver_Register_Page_Elements.findElement(Register_Page_Register_Button).click();
 		Thread.sleep(10000);
 		
-boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
+/*boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Page_topup_1).isDisplayed();
 		
 		boolean expected_one_pound = false;
 		
@@ -871,7 +871,7 @@ boolean one_pound_top_up = driver_Register_Page_Elements.findElement(Register_Pa
 			System.out.println("one pound top up active on cornwall ");
 			
 			
-		}
+		}*/
 		
 		//driver_Register_Page_Elements.findElement(Register_Page_topup_3).click();
 		//Thread.sleep(2000);

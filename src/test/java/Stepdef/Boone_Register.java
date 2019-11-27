@@ -9,7 +9,7 @@ import java.util.Calendar;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -74,11 +74,6 @@ public class Boone_Register {
 				js.executeScript("window.scrollBy(0,1200)");
 				Thread.sleep(5000);
 			
-			//Screen shot of browser navigated to article
-				File scrFile = ((TakesScreenshot)driver_Register_from_boone_first_use_notice).getScreenshotAs(OutputType.FILE);
-				String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-				FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/boone/"+"_"+timestamp+"_"+"jpg" ));	
-		
 		Boone_first_use_notice boone_first_use_register1 = new Boone_first_use_notice(driver_Register_from_boone_first_use_notice);
 		
 		boone_first_use_register1.Click_On_boone_First_Use_CreateWallet();
@@ -96,24 +91,7 @@ public class Boone_Register {
 	@When("I enter all the details successfully on reg page on boone")
 	@Test(priority=4)
 	public void i_enter_all_the_details_successfully_on_reg_page_on_boone() throws IOException, InterruptedException {
-		//screenshot of reg page
-		
-		String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		File scrFile = ((TakesScreenshot)driver_Register_from_boone_first_use_notice).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/boone/"+"_"+timestamp+"_"+"jpg" ));	
-		Thread.sleep(1000);
-		
-	//Scoll to the second half of Reg page
-		JavascriptExecutor js = (JavascriptExecutor)driver_Register_from_boone_first_use_notice;
-		js.executeScript("window.scrollBy(0,500)");
-		Thread.sleep(1000);
-		
-	//Screen shot of second half of reg page
-		String timestamp_2 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		
-	//String screenshot_name_2= "Popbitch_FUN_to_Register_1";
-		File scrFile1 = ((TakesScreenshot)driver_Register_from_boone_first_use_notice).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile1, new File("/Users/jay/Desktop/boone/"+"_"+timestamp_2+"_"+"jpg" ));
+	
 Register_Page_Elements Register_elements = new Register_Page_Elements(driver_Register_from_boone_first_use_notice);
 		Register_elements.Registration_Process();
 		 Thread.sleep(8000);
@@ -133,11 +111,6 @@ Register_Page_Elements Register_elements = new Register_Page_Elements(driver_Reg
 	
 	    
 
-		//Screen shot of finish notice
-			String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-			File scrFile = ((TakesScreenshot)driver_Register_from_boone_first_use_notice).getScreenshotAs(OutputType.FILE);		
-			FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/boone/"+"_"+timestamp+"_"+"jpg" ));
-		
 		//Verify that the finish notice appears
 			Popbitch_Finish_Notice_elements pop_finish = new Popbitch_Finish_Notice_elements(driver_Register_from_boone_first_use_notice);
 			Boolean finish_notice_pop = pop_finish.Verify_finish_notice_appears();
@@ -153,10 +126,6 @@ Register_Page_Elements Register_elements = new Register_Page_Elements(driver_Reg
 		//Click off on finish notice and click on ok
 			pop_finish.popbitch_click_on_authy_and_ok();
 	    
-			//Screen shot of authorise charge notice
-			String timestamp_2 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-			File scrFile_2 = ((TakesScreenshot)driver_Register_from_boone_first_use_notice).getScreenshotAs(OutputType.FILE);		
-			FileUtils.copyFile(scrFile_2, new File("/Users/jay/Desktop/boone/"+"_"+timestamp_2+"_"+"jpg" ));
 		
 			
 		//first verify that wallet has been topped up by £2.00

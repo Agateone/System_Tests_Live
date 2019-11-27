@@ -70,29 +70,13 @@ public class Reach_First_Use_Elements {
 						
 						
 						WebElement frame = 	driver_Reach_First_Use_Notice.findElement(By.xpath("//*[@id=\"iframe__inpage_notices\"]"));
-						driver_Reach_First_Use_Notice.switchTo().frame(frame);	
-						
-						
-						Boolean finding = driver_Reach_First_Use_Notice.findElement(By.xpath("//*[@id=\"btn_cta\"]")).isDisplayed();
-						System.out.println(finding);
-						
-						WebElement section = 	driver_Reach_First_Use_Notice.findElement(By.id("agate_section"));
-						
-						
-						
+						driver_Reach_First_Use_Notice.switchTo().frame(frame);						
+						WebElement section = 	driver_Reach_First_Use_Notice.findElement(By.id("agate_section"));						
 						js.executeScript("arguments[0].scrollIntoViewIfNeeded(true);",section);
 						WebElement Reach_First_Use_CreateWallet= driver_Reach_First_Use_Notice.findElement(By.xpath("//*[@id=\"btn_cta\"]"));
-					
-						Thread.sleep(4000);
-						
-						
-						Thread.sleep(4000);
+                        Thread.sleep(8000);
 						JavascriptExecutor executor = (JavascriptExecutor)driver_Reach_First_Use_Notice;
-						executor.executeScript("arguments[0].click();", Reach_First_Use_CreateWallet);
-						
-						
-						
-						
+						executor.executeScript("arguments[0].click();", Reach_First_Use_CreateWallet);						
 						driver_Reach_First_Use_Notice.switchTo().defaultContent();
 						}
 				

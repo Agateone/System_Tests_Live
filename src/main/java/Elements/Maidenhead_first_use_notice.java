@@ -49,10 +49,7 @@ public class Maidenhead_first_use_notice {
 			js.executeScript("window.scrollBy(0,800)");
 			Thread.sleep(2000);	
 			
-			//String screenshot_name= "Popbitch_Finish_notice_click_on_button";
-					String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-					File scrFile = ((TakesScreenshot)driver_Maidenhead_Reports_First_Use_Notice).getScreenshotAs(OutputType.FILE);		
-					FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/maidenhead/"+"_"+timestamp+"_"+"jpg" ));	
+					
 			WebElement frame = 	driver_Maidenhead_Reports_First_Use_Notice.findElement(By.xpath("//*[@id=\"iframe__inpage_notices\"]"));
 			driver_Maidenhead_Reports_First_Use_Notice.switchTo().frame(frame);	
 			Boolean finding = driver_Maidenhead_Reports_First_Use_Notice.findElement(By.xpath("//*[@id=\"btn_cta\"]")).isDisplayed();

@@ -72,11 +72,7 @@ public class Maidenhead_Register {
 				js.executeScript("window.scrollBy(0,1200)");
 				Thread.sleep(5000);
 			
-			//Screen shot of browser navigated to article
-				File scrFile = ((TakesScreenshot)driver_Register_from_Maidenhead_first_use_notice).getScreenshotAs(OutputType.FILE);
-				String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-				FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/maidenhead/"+"_"+timestamp+"_"+"jpg" ));	
-		
+			
 		Maidenhead_first_use_notice Maidenhead_first_use_register1 = new Maidenhead_first_use_notice(driver_Register_from_Maidenhead_first_use_notice);
 		
 		Maidenhead_first_use_register1.Click_On_Maidenhead_First_Use_CreateWallet();

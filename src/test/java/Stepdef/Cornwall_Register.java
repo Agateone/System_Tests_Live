@@ -75,11 +75,7 @@ public class Cornwall_Register {
 		js.executeScript("window.scrollBy(0,50)");
 		Thread.sleep(1500);
 	
-	//Screen shot of browser navigated to article
-		File scrFile = ((TakesScreenshot)driver_Register_from_Cornwall_first_use_notice).getScreenshotAs(OutputType.FILE);
-		String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());
-		FileUtils.copyFile(scrFile, new File("/Users/jay/Desktop/api/"+"_"+timestamp+"_"+"jpg" ));	
-		Thread.sleep(15000);
+
 		
 		
 		
